@@ -72,6 +72,7 @@ void ofApp::keyReleased(int key){
             break;
         case 's':
             sky.saveToXML();
+            tempConstellation.saveToXml();
             break;
         default:
             break;
