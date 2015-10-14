@@ -5,18 +5,7 @@ BPNode node;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    starA.setPosition(100, 100);
-    starB.setPosition(200, 200);
-    starA.setMagnitude(5);
-    
-    for (int i = 0; i < 400; i++) {
-        ofVec2f p = ofVec2f(ofRandom(ofGetWidth()), ofRandom(ofGetHeight()));
-        BPStar s;
-        s.setPosition(p);
-        s.setMagnitude(ofRandom(5));
-        stars.push_back(s);
-    }
-    
+    sky.setup();
     mode = Edge;
 }
 
@@ -27,14 +16,16 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackground(0);
+    // Sky
+    sky.draw();
+    
+    // Nodes
     ofSetColor(255);
-    for (auto it =stars.begin(); it != stars.end(); it++) {
-        it->draw();
-    }
     for (auto it = nodes.begin(); it != nodes.end(); it++) {
         it->draw();
     }
+    
+    // Drawings
     ofPushStyle();
     ofSetColor(100, 100, 255, 100);
     ofSetLineWidth(10);
@@ -53,6 +44,7 @@ void ofApp::draw(){
     }
     ofPopStyle();
     
+    // Others
     string str;
     switch (mode) {
         case Constellation:
@@ -113,11 +105,11 @@ void ofApp::mouseReleased(int x, int y, int button){
         ofVec2f p = ofVec2f(x, y);
         int max = 15;
         BPStar* selected;
-        for (auto it = stars.begin(); it != stars.end(); it++) {
+        for (auto it = sky.getStars()->begin(); it != sky.getStars()->end(); it++) {
             float dist = (p - it->getPosition()).length();
             if (dist < max) {
                 max = dist;
-                selected = &stars[it-stars.begin()];
+                selected = sky.getStar(it - sky.getStars()->begin());
             }
         }
         if (max < 10) {
