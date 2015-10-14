@@ -4,6 +4,8 @@
 #include "BPStar.hpp"
 #include "BPNode.hpp"
 #include "BPSky.cpp"
+#include "BPDrawing.hpp"
+#include "BPConstellation.hpp"
 
 typedef enum DrawMode {
     Constellation,
@@ -29,10 +31,13 @@ class ofApp : public ofBaseApp{
 
     vector< vector<ofVec2f> > ptss;
     vector<ofVec2f> pts;
+    BPDrawing drawing;
     BPSky sky;
     vector<BPStar> selectedStars;
     vector<BPNode> nodes;
     BPStar* selected;
     bool isFirst;
     DrawMode mode;
+    BPConstellation tempConstellation;
+    vector<BPConstellation> constellations;
 };

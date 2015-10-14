@@ -6,9 +6,46 @@
 //
 //
 
-#ifndef BPConstellation_hpp
-#define BPConstellation_hpp
+#pragma once
+#include "BPStar.hpp"
+#include "BPNode.cpp"
+#include "BPDrawing.cpp"
 
-#include <stdio.h>
-
-#endif /* BPConstellation_hpp */
+class BPConstellation {
+    vector<BPStar> stars;
+    vector<BPNode> nodes;
+    BPDrawing drawing;
+    
+public:
+    void addStar(BPStar s) {
+        stars.push_back(s);
+    }
+    
+    void addNode(BPNode n) {
+        nodes.push_back(n);
+    }
+    
+    void setDrawing(BPDrawing d) {
+        drawing = d;
+    }
+    
+    void clear() {
+        stars.clear();
+        nodes.clear();
+        drawing.clear();
+    }
+    
+    void update() {
+        
+    }
+    
+    void draw() {
+        // Nodes
+        ofSetColor(255);
+        for (auto it = nodes.begin(); it != nodes.end(); it++) {
+            it->draw();
+        }        
+        // Drawing
+        drawing.draw();
+    }
+};

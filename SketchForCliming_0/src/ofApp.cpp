@@ -26,23 +26,12 @@ void ofApp::draw(){
     }
     
     // Drawings
-    ofPushStyle();
-    ofSetColor(100, 100, 255, 100);
-    ofSetLineWidth(10);
-    ofNoFill();
-    ofBeginShape();
-    for (auto it = pts.begin(); it != pts.end(); it++) {
-        ofVertex(it->x, it->y);
+    drawing.draw();
+    
+    // Constellations
+    for (auto it = constellations.begin(); it != constellations.end(); it++) {
+        it->draw();
     }
-    ofEndShape();
-    for (int i = 0; i < ptss.size(); i++) {
-        ofBeginShape();
-        for (auto it = ptss[i].begin(); it != ptss[i].end(); it++) {
-            ofVertex(it->x, it->y);
-        }
-        ofEndShape();
-    }
-    ofPopStyle();
     
     // Others
     string str;
@@ -73,6 +62,12 @@ void ofApp::keyReleased(int key){
         case 'c':
             mode = Constellation;
             break;
+        case ' ':
+            tempConstellation.setDrawing(drawing);
+            constellations.push_back(tempConstellation);
+            drawing.clear();
+            nodes.clear();
+            selectedStars.clear();
         default:
             break;
     }
@@ -88,6 +83,8 @@ void ofApp::mouseDragged(int x, int y, int button){
     if (mode == Constellation) {
         ofVec2f v(x,y);
         pts.push_back(v);
+        
+        drawing.addPoint(ofVec2f(x, y));
     }
 }
 
@@ -96,6 +93,8 @@ void ofApp::mousePressed(int x, int y, int button){
     if (mode == Constellation) {
         ofVec2f v(x,y);
         pts.push_back(v);
+        
+        drawing.addPoint(ofVec2f(x, y));
     }
 }
 
@@ -114,11 +113,13 @@ void ofApp::mouseReleased(int x, int y, int button){
         }
         if (max < 10) {
             selectedStars.push_back(*selected);
+            tempConstellation.addStar(*selected);
             if (selectedStars.size() == 2) {
                 BPNode n;
                 n.setStartingStar(selectedStars[0]);
                 n.setEndStar(selectedStars[1]);
                 nodes.push_back(n);
+                tempConstellation.addNode(n);
                 selectedStars.clear();
             }
         }
@@ -128,6 +129,8 @@ void ofApp::mouseReleased(int x, int y, int button){
         pts.push_back(v);
         ptss.push_back(pts);
         pts.clear();
+        
+        drawing.endPoint(ofVec2f(x, y));
     }
 }
 
