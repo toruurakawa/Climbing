@@ -5,7 +5,8 @@ BPNode node;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    sky.setup();
+    sky.setupFromXml("mySettings.xml");
+//    sky.setup();
     mode = Edge;
 }
 
@@ -68,6 +69,10 @@ void ofApp::keyReleased(int key){
             drawing.clear();
             nodes.clear();
             selectedStars.clear();
+            break;
+        case 's':
+            sky.saveToXML();
+            break;
         default:
             break;
     }
