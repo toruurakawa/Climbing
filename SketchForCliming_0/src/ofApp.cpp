@@ -6,6 +6,7 @@ BPNode node;
 //--------------------------------------------------------------
 void ofApp::setup(){
     sky.setupFromXml("mySettings.xml");
+    tempConstellation.loadFromXml();
 //    sky.setup();
     mode = Edge;
 }
@@ -33,6 +34,7 @@ void ofApp::draw(){
     for (auto it = constellations.begin(); it != constellations.end(); it++) {
         it->draw();
     }
+    tempConstellation.draw();
     
     // Others
     string str;
@@ -71,6 +73,7 @@ void ofApp::keyReleased(int key){
             selectedStars.clear();
             break;
         case 's':
+            tempConstellation.setDrawing(drawing);
             sky.saveToXML();
             tempConstellation.saveToXml();
             break;

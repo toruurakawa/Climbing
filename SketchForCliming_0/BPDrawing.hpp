@@ -30,6 +30,10 @@ public:
         pts.clear();
     }
     
+    void addPts(vector<ofVec2f> _pts) {
+        ptss.push_back(_pts);
+    }
+    
     void draw() {
         ofPushStyle();
         ofSetColor(100, 100, 255, 100);
@@ -50,4 +54,8 @@ public:
         ofPopStyle();
     }
 
+    vector< vector<ofVec2f> >* getPoints() {
+        return &ptss;
+    }
+    
 };

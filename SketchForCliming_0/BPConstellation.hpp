@@ -91,8 +91,93 @@ public:
             node.setTo("ENDING");
             node.addValue("X", p_e.x);
             node.addValue("Y", p_e.y);
+            node.setTo("../");
             xml.addXml(node);
         }
+        // Drawing
+        xml.setTo("../");
+        xml.addChild("DRAWING");
+        xml.setTo("DRAWING");
+        for (auto it = drawing.getPoints()->begin() ; it != drawing.getPoints()->end(); it++) {
+            ofXml stroke;
+            stroke.addChild("STROKE");
+            stroke.setTo("STROKE");
+            for (auto it2 = it->begin(); it2 != it->end(); it2++) {
+                cout << it->size() << endl;
+                ofXml position;
+                position.addChild("POSITION");
+                position.setTo("POSITION");
+                position.addValue("X", it2->x);
+                position.addValue("Y", it2->y);
+                stroke.addXml(position);
+            }
+            xml.addXml(stroke);
+        }
         xml.save("Constellation.xml");
+    }
+    
+    void loadFromXml(){
+        ofXml loadXml;
+        if( loadXml.load("Constellation.xml") ) {
+        
+            // Stars
+            loadXml.setTo("CONSTELLATION");
+            loadXml.setTo("STARS");
+            loadXml.setTo("STAR[0]");
+            do {
+                loadXml.setTo("POSITION");
+                float x = loadXml.getValue<float>("X");
+                float y = loadXml.getValue<float>("Y");
+                loadXml.setToParent();
+                int m = loadXml.getValue<int>("MAGNITUDE");
+                
+                BPStar s;
+                s.setPosition(x, y);
+                s.setMagnitude(m);
+                stars.push_back(s);
+                cout << x << " " << y << endl;
+            }while( loadXml.setToSibling() ); // go to next STAR
+            
+            
+            // Nodes
+            loadXml.setTo("../../");
+            loadXml.setTo("NODES");
+            loadXml.setTo("NODE[0]");
+            do {
+                loadXml.setTo("STARTING");
+                float x_s = loadXml.getValue<float>("X");
+                float y_s = loadXml.getValue<float>("Y");
+                loadXml.setTo("../");
+                loadXml.setTo("ENDING");
+                float x_e = loadXml.getValue<float>("X");
+                float y_e = loadXml.getValue<float>("Y");
+                loadXml.setTo("../");
+
+                BPNode n;
+                BPStar s_s, s_e;
+                s_s.setPosition(x_s, y_s);
+                n.setStartingStar(s_s);
+                s_e.setPosition(x_e, y_e);
+                n.setEndStar(s_e);
+                nodes.push_back(n);
+            }while( loadXml.setToSibling() ); // go to next NODE
+
+            // Drawing
+            loadXml.setTo("../../");
+            loadXml.setTo("DRAWING");
+            loadXml.setTo("STROKE[0]");
+            do {
+                loadXml.setTo("POSITION[0]");
+                vector<ofVec2f> pts;
+                do {
+                    float x = loadXml.getValue<float>("X");
+                    float y = loadXml.getValue<float>("Y");
+                    ofVec2f p = ofVec2f(x, y);
+                    pts.push_back(p);
+                } while (loadXml.setToSibling() ); // go to next POSITION
+                drawing.addPts(pts);
+                loadXml.setTo("../");
+            }while( loadXml.setToSibling() ); // go to next STROKE
+        }
     }
 };
