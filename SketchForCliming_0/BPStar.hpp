@@ -13,14 +13,28 @@
 class BPStar {
     ofVec2f pos;
     int magnitude;
-    
+    int id;
 public:
+    bool isConstellation;
+    bool isShootingStar;
+    static ofImage starImg;
+    float shootingTime;
+    
+    BPStar() {
+        isConstellation = false;
+        isShootingStar = false;
+    }
+
     void setPosition(float x, float y) {
         setPosition(ofVec2f(x, y));
     }
     
     void setPosition(ofVec2f _pos) {
         pos = _pos;
+    }
+    
+    void setId(int n) {
+        id = n;
     }
     
     ofVec2f getPosition() {
@@ -35,14 +49,42 @@ public:
         return magnitude;
     }
     
+    int getId(){
+        return id;
+    }
+
+    
     void draw() {
+        if (isShootingStar) {
+            if (ofGetElapsedTimef() - shootingTime > .5) {
+                return;
+            }
+        }
         ofPushStyle();
         ofSetRectMode(OF_RECTMODE_CENTER);
         ofFill();
         ofPushMatrix();
         ofTranslate(pos.x, pos.y);
-        ofCircle(0, 0, magnitude);
+        if (isConstellation) {
+            ofSetColor(255, 255, 0);
+        } else {
+            ofSetColor(255);
+        }
+        starImg.draw(0, 0, magnitude * 10, magnitude * 10);
         ofPopMatrix();
         ofPopStyle();
     }
+    
+    void shoot(){
+        shootingTime = ofGetElapsedTimef();
+        isShootingStar = true;
+    }
+    
+    void update() {
+        if (isShootingStar) {
+            pos += ofVec2f(-10, 10);
+        }
+    }
 };
+
+

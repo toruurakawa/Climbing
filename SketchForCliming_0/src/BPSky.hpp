@@ -13,7 +13,6 @@ class BPSky {
     ofVec2f size;
     vector<BPStar> stars;
     ofXml xml;
-    
 public:
     void setupFromXml(string filename) {
         size = ofVec2f(ofGetWidth(), ofGetHeight());
@@ -25,10 +24,12 @@ public:
                 int y = xml.getValue<float>("Y");
                 xml.setToParent();
                 int m = xml.getValue<int>("MAGNITUDE");
+                int id = xml.getValue<int>("ID");
                 
                 BPStar s;
                 s.setPosition(x, y);
                 s.setMagnitude(m);
+                s.setId(id);
                 stars.push_back(s);
             }while( xml.setToSibling() ); // go to next STAR
         } else {
@@ -41,13 +42,18 @@ public:
         for (int i = 0; i < 400; i++) {
             ofVec2f p = ofVec2f(ofRandom(size.x), ofRandom(size.y));
             BPStar s;
+            s.setId(i);
             s.setPosition(p);
             s.setMagnitude(ofRandom(5));
             stars.push_back(s);
         }
     }
     
-    void update();
+    void update() {
+        for (auto it =stars.begin(); it != stars.end(); it++) {
+            it->update();
+        }
+    }
     
     void draw() {
         ofPushStyle();
@@ -77,6 +83,7 @@ public:
         for (auto it = stars.begin(); it != stars.end(); it++) {
             ofVec2f p = it->getPosition();
             int m = it->getMagnitude();
+            int id = it->getId();
             
             ofXml star;
             star.addChild("STAR");
@@ -87,6 +94,7 @@ public:
             star.addValue("Y", p.y);
             star.setTo("../");
             star.addValue("MAGNITUDE", m);
+            star.addValue("ID", id);
             
             xml.addXml(star);
         }

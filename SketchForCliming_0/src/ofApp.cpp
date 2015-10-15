@@ -2,18 +2,35 @@
 
 BPStar starA, starB;
 BPNode node;
+ofImage BPStar::starImg;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    BPStar::starImg.loadImage("particle32.png");
+    ofSetWindowPosition(2000, 0);
+    ofSetFullscreen(true);
     sky.setupFromXml("mySettings.xml");
-    tempConstellation.loadFromXml();
-//    sky.setup();
+    
+    BPConstellation c;
+    c.loadFromXml();
+    constellations.push_back(c);
+    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
+        cout << it->getId() << endl;
+        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+            cout << "   " << it2->getId() << endl;
+            if (it->getId() == it2->getId()) {
+                it2->isConstellation = true;
+            }
+        }
+    }
+    
+    
     mode = Edge;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    sky.update();
 }
 
 //--------------------------------------------------------------
@@ -48,7 +65,9 @@ void ofApp::draw(){
         default:
             break;
     }
-    ofDrawBitmapString(str, ofVec2f(10, 10));
+//    ofDrawBitmapString(str, ofVec2f(10, 10));
+    
+    ofDrawBitmapString(ofToString(ofGetFrameRate()), ofVec2f(10, 10));
 }
 
 //--------------------------------------------------------------
@@ -76,6 +95,19 @@ void ofApp::keyReleased(int key){
             tempConstellation.setDrawing(drawing);
             sky.saveToXML();
             tempConstellation.saveToXml();
+            break;
+        case 'r':
+            tempConstellation.clear();
+            break;
+        case 'x':
+            for (auto it = constellations[0].getStars()->begin();
+                 it != constellations[0].getStars()->end(); it++) {
+                for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+                    if (it->getId() == it2->getId()) {
+                        it2->shoot();
+                    }
+                }
+            }
             break;
         default:
             break;

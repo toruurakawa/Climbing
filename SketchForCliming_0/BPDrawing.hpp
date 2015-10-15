@@ -36,18 +36,37 @@ public:
     
     void draw() {
         ofPushStyle();
-        ofSetColor(100, 100, 255, 100);
-        ofSetLineWidth(10);
+        ofSetColor(100, 100, 255, 255);
+        ofSetLineWidth(5);
         ofNoFill();
         ofBeginShape();
         for (auto it = pts.begin(); it != pts.end(); it++) {
             ofVertex(it->x, it->y);
         }
         ofEndShape();
+        ofMatrix4x4 m;
+        float theta = sin(ofGetElapsedTimef()) * M_PI / 64.;
+        m.set(cos(theta), -sin(theta), 0, 0,
+              sin(theta), cos(theta), 0, 0,
+              0, 0, 1, 0,
+              0, 0, 0, 1);
+        ofVec3f sum;
+        int size = 0;
+        for (int i = 0; i < ptss.size(); i++) {
+            for (auto it = ptss[i].begin(); it != ptss[i].end(); it++) {
+                ofVec3f p = ofVec3f(it->x, it->y, 0);
+                sum += p;
+                size++;
+            }
+        }
+        sum = sum / ofVec3f(size);
         for (int i = 0; i < ptss.size(); i++) {
             ofBeginShape();
             for (auto it = ptss[i].begin(); it != ptss[i].end(); it++) {
-                ofVertex(it->x, it->y);
+                ofVec3f p = ofVec3f(it->x, it->y, 0);
+                ofVec3f a =  sum;
+                p = m * (p - a) + a;
+                ofVertex(p.x, p.y);
             }
             ofEndShape();
         }

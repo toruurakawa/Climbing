@@ -15,8 +15,12 @@ class BPConstellation {
     vector<BPStar> stars;
     vector<BPNode> nodes;
     BPDrawing drawing;
-    ofXml xml;
 public:
+    
+    vector<BPStar>* getStars(){
+        return &stars;
+    }
+    
     void addStar(BPStar s) {
         stars.push_back(s);
     }
@@ -50,6 +54,7 @@ public:
     }
     
     void saveToXml(){
+        ofXml xml;
         xml.addChild("CONSTELLATION");
         xml.setTo("CONSTELLATION");
         // Stars
@@ -58,6 +63,7 @@ public:
         for (auto it = stars.begin(); it != stars.end(); it++) {
             ofVec2f p = it->getPosition();
             int m = it->getMagnitude();
+            int id = it->getId();
             
             ofXml star;
             star.addChild("STAR");
@@ -68,6 +74,7 @@ public:
             star.addValue("Y", p.y);
             star.setTo("../");
             star.addValue("MAGNITUDE", m);
+            star.addValue("ID", id);
             
             xml.addXml(star);
         }
@@ -119,7 +126,6 @@ public:
     void loadFromXml(){
         ofXml loadXml;
         if( loadXml.load("Constellation.xml") ) {
-        
             // Stars
             loadXml.setTo("CONSTELLATION");
             loadXml.setTo("STARS");
@@ -130,15 +136,15 @@ public:
                 float y = loadXml.getValue<float>("Y");
                 loadXml.setToParent();
                 int m = loadXml.getValue<int>("MAGNITUDE");
-                
+                int id = loadXml.getValue<int>("ID");
+
                 BPStar s;
                 s.setPosition(x, y);
                 s.setMagnitude(m);
+                s.setId(id);
                 stars.push_back(s);
-                cout << x << " " << y << endl;
+                cout << x << " " << y << " " << id << endl;
             }while( loadXml.setToSibling() ); // go to next STAR
-            
-            
             // Nodes
             loadXml.setTo("../../");
             loadXml.setTo("NODES");
@@ -161,7 +167,6 @@ public:
                 n.setEndStar(s_e);
                 nodes.push_back(n);
             }while( loadXml.setToSibling() ); // go to next NODE
-
             // Drawing
             loadXml.setTo("../../");
             loadXml.setTo("DRAWING");
