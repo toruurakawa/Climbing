@@ -110,7 +110,6 @@ public:
             stroke.addChild("STROKE");
             stroke.setTo("STROKE");
             for (auto it2 = it->begin(); it2 != it->end(); it2++) {
-                cout << it->size() << endl;
                 ofXml position;
                 position.addChild("POSITION");
                 position.setTo("POSITION");
@@ -143,7 +142,6 @@ public:
                 s.setMagnitude(m);
                 s.setId(id);
                 stars.push_back(s);
-                cout << x << " " << y << " " << id << endl;
             }while( loadXml.setToSibling() ); // go to next STAR
             // Nodes
             loadXml.setTo("../../");

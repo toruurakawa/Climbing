@@ -1,3202 +1,3202 @@
 <SKY>
 	<STAR>
 		<POSITION>
-			<X>497</X>
-			<Y>404</Y>
+			<X>1481</X>
+			<Y>332</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>0</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>53</X>
-			<Y>7</Y>
+			<X>261</X>
+			<Y>497</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>1</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1153</X>
-			<Y>762</Y>
+			<X>854</X>
+			<Y>626</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>2</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>888</X>
-			<Y>114</Y>
+			<X>677</X>
+			<Y>111</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>3</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1055</X>
-			<Y>141</Y>
+			<X>1554</X>
+			<Y>487</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>4</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>123</X>
-			<Y>630</Y>
+			<X>221</X>
+			<Y>316</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>5</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1368</X>
-			<Y>251</Y>
+			<X>10</X>
+			<Y>941</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>6</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1016</X>
-			<Y>674</Y>
+			<X>298</X>
+			<Y>985</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>7</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>935</X>
-			<Y>830</Y>
+			<X>297</X>
+			<Y>533</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>8</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1301</X>
-			<Y>342</Y>
+			<X>809</X>
+			<Y>153</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>9</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>421</X>
-			<Y>214</Y>
+			<X>1073</X>
+			<Y>51</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>10</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1029</X>
-			<Y>859</Y>
+			<X>919</X>
+			<Y>102</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>11</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1132</X>
-			<Y>464</Y>
+			<X>633</X>
+			<Y>798</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>12</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1141</X>
-			<Y>794</Y>
+			<X>1617</X>
+			<Y>166</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>13</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>469</X>
-			<Y>242</Y>
+			<X>338</X>
+			<Y>716</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>14</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1060</X>
-			<Y>524</Y>
+			<X>1544</X>
+			<Y>155</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>15</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>235</X>
-			<Y>70</Y>
+			<X>1014</X>
+			<Y>841</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>16</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1201</X>
-			<Y>425</Y>
+			<X>917</X>
+			<Y>625</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>17</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1360</X>
-			<Y>563</Y>
+			<X>48</X>
+			<Y>251</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>18</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>71</X>
-			<Y>193</Y>
+			<X>1579</X>
+			<Y>12</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>19</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1244</X>
-			<Y>560</Y>
+			<X>1178</X>
+			<Y>977</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>20</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1198</X>
-			<Y>838</Y>
+			<X>994</X>
+			<Y>793</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>21</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>964</X>
-			<Y>498</Y>
+			<X>223</X>
+			<Y>916</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>22</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1309</X>
-			<Y>275</Y>
+			<X>195</X>
+			<Y>47</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>23</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>78</X>
-			<Y>684</Y>
+			<X>899</X>
+			<Y>294</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>24</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>245</X>
-			<Y>741</Y>
+			<X>956</X>
+			<Y>495</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>25</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1008</X>
-			<Y>550</Y>
+			<X>841</X>
+			<Y>471</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>26</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>525</X>
-			<Y>777</Y>
+			<X>1554</X>
+			<Y>158</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>27</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>855</X>
-			<Y>643</Y>
+			<X>1186</X>
+			<Y>378</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>28</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>502</X>
-			<Y>158</Y>
+			<X>1761</X>
+			<Y>341</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>29</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1284</X>
-			<Y>847</Y>
+			<X>1790</X>
+			<Y>917</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>30</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1208</X>
-			<Y>502</Y>
+			<X>325</X>
+			<Y>313</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>31</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>16</X>
-			<Y>582</Y>
+			<X>1855</X>
+			<Y>986</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>32</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>484</X>
-			<Y>884</Y>
+			<X>1581</X>
+			<Y>879</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>33</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>902</X>
-			<Y>797</Y>
+			<X>1339</X>
+			<Y>865</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>34</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>525</X>
-			<Y>889</Y>
+			<X>146</X>
+			<Y>334</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>35</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>697</X>
-			<Y>85</Y>
+			<X>974</X>
+			<Y>908</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>36</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>651</X>
-			<Y>814</Y>
+			<X>912</X>
+			<Y>104</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>37</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1401</X>
-			<Y>289</Y>
+			<X>211</X>
+			<Y>358</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>38</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>513</X>
-			<Y>111</Y>
+			<X>1435</X>
+			<Y>903</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>39</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>287</X>
-			<Y>795</Y>
+			<X>1887</X>
+			<Y>450</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>40</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>568</X>
-			<Y>469</Y>
+			<X>576</X>
+			<Y>219</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>41</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>614</X>
-			<Y>805</Y>
+			<X>1568</X>
+			<Y>189</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>42</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>581</X>
-			<Y>129</Y>
+			<X>1329</X>
+			<Y>325</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>43</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1241</X>
-			<Y>383</Y>
+			<X>216</X>
+			<Y>663</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>44</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>145</X>
-			<Y>628</Y>
+			<X>226</X>
+			<Y>705</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>45</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>107</X>
-			<Y>116</Y>
+			<X>372</X>
+			<Y>784</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>46</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>434</X>
-			<Y>858</Y>
+			<X>1270</X>
+			<Y>326</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>47</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>364</X>
-			<Y>605</Y>
+			<X>883</X>
+			<Y>1010</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>48</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>56</X>
-			<Y>792</Y>
+			<X>1225</X>
+			<Y>427</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>49</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>529</X>
-			<Y>662</Y>
+			<X>1470</X>
+			<Y>530</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>50</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>628</X>
-			<Y>233</Y>
+			<X>1342</X>
+			<Y>225</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>51</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>830</X>
-			<Y>69</Y>
+			<X>1466</X>
+			<Y>823</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>52</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>549</X>
-			<Y>19</Y>
+			<X>632</X>
+			<Y>1009</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>53</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>455</X>
-			<Y>67</Y>
+			<X>1710</X>
+			<Y>188</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>54</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>607</X>
-			<Y>237</Y>
+			<X>730</X>
+			<Y>501</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>55</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1290</X>
-			<Y>770</Y>
+			<X>1532</X>
+			<Y>234</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>56</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>904</X>
-			<Y>36</Y>
+			<X>302</X>
+			<Y>233</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>57</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>220</X>
-			<Y>100</Y>
+			<X>857</X>
+			<Y>442</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>58</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>334</X>
-			<Y>500</Y>
+			<X>602</X>
+			<Y>895</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>59</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>634</X>
-			<Y>522</Y>
+			<X>142</X>
+			<Y>181</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>60</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>136</X>
-			<Y>862</Y>
+			<X>131</X>
+			<Y>690</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>61</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1025</X>
-			<Y>360</Y>
+			<X>1796</X>
+			<Y>820</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>62</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>369</X>
-			<Y>772</Y>
+			<X>1097</X>
+			<Y>169</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>63</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>948</X>
-			<Y>625</Y>
+			<X>850</X>
+			<Y>755</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>64</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1110</X>
-			<Y>899</Y>
+			<X>430</X>
+			<Y>454</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>65</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>761</X>
-			<Y>287</Y>
+			<X>1826</X>
+			<Y>797</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>66</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>229</X>
-			<Y>785</Y>
+			<X>302</X>
+			<Y>734</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>67</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>762</X>
-			<Y>870</Y>
+			<X>1646</X>
+			<Y>704</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>68</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>835</X>
-			<Y>773</Y>
+			<X>1577</X>
+			<Y>1022</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>69</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>829</X>
-			<Y>720</Y>
+			<X>1382</X>
+			<Y>226</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>70</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1291</X>
-			<Y>173</Y>
+			<X>864</X>
+			<Y>46</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>71</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1223</X>
-			<Y>566</Y>
+			<X>1270</X>
+			<Y>927</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>72</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1050</X>
-			<Y>788</Y>
+			<X>1423</X>
+			<Y>830</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>73</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1159</X>
-			<Y>270</Y>
+			<X>922</X>
+			<Y>64</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>74</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1396</X>
-			<Y>741</Y>
+			<X>1188</X>
+			<Y>431</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>75</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>295</X>
-			<Y>643</Y>
+			<X>202</X>
+			<Y>983</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>76</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>536</X>
-			<Y>451</Y>
+			<X>1715</X>
+			<Y>1009</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>77</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>900</X>
-			<Y>430</Y>
+			<X>686</X>
+			<Y>390</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>78</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>559</X>
-			<Y>162</Y>
+			<X>439</X>
+			<Y>611</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>79</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>633</X>
-			<Y>111</Y>
+			<X>1353</X>
+			<Y>618</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>80</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>319</X>
-			<Y>294</Y>
+			<X>184</X>
+			<Y>170</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>81</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>525</X>
-			<Y>621</Y>
+			<X>1784</X>
+			<Y>726</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>82</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>242</X>
-			<Y>634</Y>
+			<X>1707</X>
+			<Y>276</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>83</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1068</X>
-			<Y>517</Y>
+			<X>1436</X>
+			<Y>409</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>84</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>963</X>
-			<Y>584</Y>
+			<X>1828</X>
+			<Y>834</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>85</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>644</X>
-			<Y>816</Y>
+			<X>340</X>
+			<Y>737</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>86</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>955</X>
-			<Y>552</Y>
+			<X>1266</X>
+			<Y>570</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>87</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>622</X>
-			<Y>230</Y>
+			<X>1784</X>
+			<Y>641</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>88</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>835</X>
-			<Y>65</Y>
+			<X>677</X>
+			<Y>623</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>89</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1026</X>
-			<Y>375</Y>
+			<X>746</X>
+			<Y>784</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>90</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>66</X>
-			<Y>797</Y>
+			<X>242</X>
+			<Y>688</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>91</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>852</X>
-			<Y>476</Y>
+			<X>1469</X>
+			<Y>501</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>92</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>235</X>
-			<Y>737</Y>
+			<X>973</X>
+			<Y>1069</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>93</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>29</X>
-			<Y>234</Y>
+			<X>1882</X>
+			<Y>455</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>94</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>481</X>
-			<Y>310</Y>
+			<X>175</X>
+			<Y>353</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>95</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>152</X>
-			<Y>284</Y>
+			<X>434</X>
+			<Y>837</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>96</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>254</X>
-			<Y>541</Y>
+			<X>488</X>
+			<Y>181</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>97</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>31</X>
-			<Y>7</Y>
+			<X>727</X>
+			<Y>566</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>98</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1226</X>
-			<Y>465</Y>
+			<X>1350</X>
+			<Y>464</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>99</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>758</X>
-			<Y>750</Y>
+			<X>1381</X>
+			<Y>226</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>100</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>591</X>
-			<Y>780</Y>
+			<X>1150</X>
+			<Y>985</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>101</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>843</X>
-			<Y>707</Y>
+			<X>1901</X>
+			<Y>685</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>102</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1280</X>
-			<Y>664</Y>
+			<X>851</X>
+			<Y>1007</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>103</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1226</X>
-			<Y>580</Y>
+			<X>1513</X>
+			<Y>2</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>104</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>53</X>
-			<Y>464</Y>
+			<X>1411</X>
+			<Y>707</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>105</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>458</X>
-			<Y>837</Y>
+			<X>1098</X>
+			<Y>635</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>106</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>538</X>
-			<Y>567</Y>
+			<X>1652</X>
+			<Y>633</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>107</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>142</X>
-			<Y>694</Y>
+			<X>1311</X>
+			<Y>169</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>108</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>427</X>
-			<Y>446</Y>
+			<X>1785</X>
+			<Y>628</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>109</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>578</X>
-			<Y>761</Y>
+			<X>864</X>
+			<Y>578</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>110</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1294</X>
-			<Y>374</Y>
+			<X>1662</X>
+			<Y>490</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>111</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>384</X>
-			<Y>481</Y>
+			<X>1474</X>
+			<Y>469</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>112</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>421</X>
-			<Y>157</Y>
+			<X>1749</X>
+			<Y>929</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>113</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>698</X>
-			<Y>653</Y>
+			<X>485</X>
+			<Y>407</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>114</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>563</X>
-			<Y>638</Y>
+			<X>1546</X>
+			<Y>176</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>115</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>743</X>
-			<Y>634</Y>
+			<X>590</X>
+			<Y>759</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>116</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>876</X>
-			<Y>815</Y>
+			<X>1866</X>
+			<Y>953</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>117</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>4</X>
-			<Y>152</Y>
+			<X>248</X>
+			<Y>225</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>118</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>922</X>
-			<Y>544</Y>
+			<X>1581</X>
+			<Y>331</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>119</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1186</X>
-			<Y>550</Y>
+			<X>1535</X>
+			<Y>38</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>120</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>997</X>
-			<Y>745</Y>
+			<X>601</X>
+			<Y>468</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>121</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>619</X>
-			<Y>85</Y>
+			<X>1750</X>
+			<Y>861</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>122</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>75</X>
-			<Y>333</Y>
+			<X>283</X>
+			<Y>0</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>123</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>688</X>
-			<Y>794</Y>
+			<X>871</X>
+			<Y>862</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>124</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>649</X>
-			<Y>174</Y>
+			<X>81</X>
+			<Y>399</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>125</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>926</X>
-			<Y>26</Y>
+			<X>1488</X>
+			<Y>441</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>126</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1260</X>
-			<Y>763</Y>
+			<X>528</X>
+			<Y>1050</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>127</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1016</X>
-			<Y>318</Y>
+			<X>542</X>
+			<Y>706</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>128</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>275</X>
-			<Y>586</Y>
+			<X>1164</X>
+			<Y>937</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>129</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>162</X>
-			<Y>41</Y>
+			<X>1249</X>
+			<Y>438</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>130</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>934</X>
-			<Y>712</Y>
+			<X>815</X>
+			<Y>388</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>131</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1093</X>
-			<Y>453</Y>
+			<X>1097</X>
+			<Y>564</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>132</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>315</X>
-			<Y>852</Y>
+			<X>222</X>
+			<Y>982</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>133</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>283</X>
-			<Y>410</Y>
+			<X>841</X>
+			<Y>136</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>134</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>760</X>
-			<Y>458</Y>
+			<X>926</X>
+			<Y>958</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>135</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>707</X>
-			<Y>299</Y>
+			<X>1294</X>
+			<Y>529</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>136</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1248</X>
-			<Y>297</Y>
+			<X>1676</X>
+			<Y>776</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>137</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>422</X>
-			<Y>296</Y>
+			<X>336</X>
+			<Y>900</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>138</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>116</X>
-			<Y>265</Y>
+			<X>140</X>
+			<Y>105</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>139</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>771</X>
-			<Y>381</Y>
+			<X>1866</X>
+			<Y>398</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>140</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>963</X>
-			<Y>484</Y>
+			<X>857</X>
+			<Y>611</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>141</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>231</X>
-			<Y>768</Y>
+			<X>1409</X>
+			<Y>557</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>142</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1311</X>
-			<Y>463</Y>
+			<X>997</X>
+			<Y>750</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>143</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>985</X>
-			<Y>31</Y>
+			<X>71</X>
+			<Y>907</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>144</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>348</X>
-			<Y>114</Y>
+			<X>672</X>
+			<Y>648</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>145</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>280</X>
-			<Y>839</Y>
+			<X>1532</X>
+			<Y>890</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>146</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>209</X>
-			<Y>574</Y>
+			<X>1608</X>
+			<Y>522</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>147</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1305</X>
-			<Y>641</Y>
+			<X>620</X>
+			<Y>360</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>148</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1048</X>
-			<Y>548</Y>
+			<X>1508</X>
+			<Y>498</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>149</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>973</X>
-			<Y>737</Y>
+			<X>1161</X>
+			<Y>733</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>150</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>831</X>
-			<Y>287</Y>
+			<X>1796</X>
+			<Y>50</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>151</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1107</X>
-			<Y>889</Y>
+			<X>1111</X>
+			<Y>966</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>152</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>298</X>
-			<Y>587</Y>
+			<X>1508</X>
+			<Y>441</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>153</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1280</X>
-			<Y>375</Y>
+			<X>1336</X>
+			<Y>297</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>154</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>516</X>
-			<Y>171</Y>
+			<X>1325</X>
+			<Y>578</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>155</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>542</X>
-			<Y>257</Y>
+			<X>1147</X>
+			<Y>601</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>156</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>578</X>
-			<Y>562</Y>
+			<X>319</X>
+			<Y>573</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>157</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1205</X>
-			<Y>144</Y>
+			<X>840</X>
+			<Y>850</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>158</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>339</X>
-			<Y>885</Y>
+			<X>1223</X>
+			<Y>355</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>159</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>126</X>
-			<Y>677</Y>
+			<X>933</X>
+			<Y>355</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>160</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>287</X>
-			<Y>773</Y>
+			<X>68</X>
+			<Y>90</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>161</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>736</X>
-			<Y>170</Y>
+			<X>1882</X>
+			<Y>98</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>162</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>182</X>
-			<Y>752</Y>
+			<X>1730</X>
+			<Y>396</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>163</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>62</X>
-			<Y>469</Y>
+			<X>875</X>
+			<Y>290</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>164</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>203</X>
-			<Y>306</Y>
+			<X>545</X>
+			<Y>891</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>165</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>272</X>
-			<Y>828</Y>
+			<X>966</X>
+			<Y>195</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>166</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>290</X>
-			<Y>646</Y>
+			<X>446</X>
+			<Y>334</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>167</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>325</X>
-			<Y>344</Y>
+			<X>1259</X>
+			<Y>108</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>168</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1076</X>
-			<Y>706</Y>
+			<X>1606</X>
+			<Y>267</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>169</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>642</X>
-			<Y>361</Y>
+			<X>727</X>
+			<Y>422</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>170</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>172</X>
-			<Y>130</Y>
+			<X>256</X>
+			<Y>594</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>171</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>567</X>
-			<Y>725</Y>
+			<X>603</X>
+			<Y>858</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>172</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>540</X>
-			<Y>713</Y>
+			<X>758</X>
+			<Y>451</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>173</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>918</X>
-			<Y>398</Y>
+			<X>1062</X>
+			<Y>855</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>174</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>828</X>
-			<Y>566</Y>
+			<X>607</X>
+			<Y>859</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>175</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>779</X>
-			<Y>543</Y>
+			<X>988</X>
+			<Y>106</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>176</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>553</X>
-			<Y>495</Y>
+			<X>1740</X>
+			<Y>375</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>177</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1284</X>
-			<Y>675</Y>
+			<X>1549</X>
+			<Y>91</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>178</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1285</X>
-			<Y>797</Y>
+			<X>1646</X>
+			<Y>812</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>179</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>588</X>
-			<Y>86</Y>
+			<X>1059</X>
+			<Y>120</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>180</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>439</X>
-			<Y>583</Y>
+			<X>438</X>
+			<Y>460</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>181</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1106</X>
-			<Y>264</Y>
+			<X>1658</X>
+			<Y>535</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>182</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>308</X>
-			<Y>471</Y>
+			<X>1653</X>
+			<Y>732</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>183</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>193</X>
-			<Y>292</Y>
+			<X>1243</X>
+			<Y>524</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>184</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>567</X>
-			<Y>134</Y>
+			<X>1304</X>
+			<Y>814</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>185</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1344</X>
-			<Y>579</Y>
+			<X>658</X>
+			<Y>164</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>186</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1082</X>
-			<Y>413</Y>
+			<X>1363</X>
+			<Y>666</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>187</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>693</X>
-			<Y>3</Y>
+			<X>1830</X>
+			<Y>361</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>188</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>749</X>
-			<Y>820</Y>
+			<X>1727</X>
+			<Y>815</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>189</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1346</X>
-			<Y>281</Y>
+			<X>380</X>
+			<Y>209</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>190</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>296</X>
-			<Y>516</Y>
+			<X>635</X>
+			<Y>813</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>191</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1293</X>
-			<Y>546</Y>
+			<X>1159</X>
+			<Y>984</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>192</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>744</X>
-			<Y>2</Y>
+			<X>139</X>
+			<Y>944</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>193</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1210</X>
-			<Y>776</Y>
+			<X>687</X>
+			<Y>957</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>194</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>6</X>
-			<Y>401</Y>
+			<X>161</X>
+			<Y>561</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>195</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1232</X>
-			<Y>222</Y>
+			<X>7</X>
+			<Y>890</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>196</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>195</X>
-			<Y>275</Y>
+			<X>1203</X>
+			<Y>185</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>197</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1051</X>
-			<Y>25</Y>
+			<X>1771</X>
+			<Y>785</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>198</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>412</X>
-			<Y>398</Y>
+			<X>693</X>
+			<Y>1030</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>199</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1415</X>
-			<Y>276</Y>
+			<X>558</X>
+			<Y>687</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>200</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>899</X>
-			<Y>86</Y>
+			<X>1482</X>
+			<Y>285</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>201</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>559</X>
-			<Y>614</Y>
+			<X>31</X>
+			<Y>1046</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>202</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>73</X>
-			<Y>73</Y>
+			<X>1576</X>
+			<Y>1015</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>203</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1135</X>
-			<Y>349</Y>
+			<X>1597</X>
+			<Y>905</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>204</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>231</X>
-			<Y>750</Y>
+			<X>696</X>
+			<Y>317</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>205</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>220</X>
-			<Y>338</Y>
+			<X>663</X>
+			<Y>848</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>206</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>902</X>
-			<Y>59</Y>
+			<X>1269</X>
+			<Y>8</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>207</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>701</X>
-			<Y>216</Y>
+			<X>467</X>
+			<Y>892</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>208</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1051</X>
-			<Y>380</Y>
+			<X>999</X>
+			<Y>511</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>209</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>182</X>
-			<Y>405</Y>
+			<X>1701</X>
+			<Y>512</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>210</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>34</X>
-			<Y>184</Y>
+			<X>72</X>
+			<Y>305</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>211</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>160</X>
-			<Y>716</Y>
+			<X>41</X>
+			<Y>742</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>212</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>826</X>
-			<Y>522</Y>
+			<X>1100</X>
+			<Y>705</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>213</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1420</X>
-			<Y>615</Y>
+			<X>535</X>
+			<Y>298</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>214</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>874</X>
-			<Y>821</Y>
+			<X>1380</X>
+			<Y>996</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>215</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1312</X>
-			<Y>766</Y>
+			<X>986</X>
+			<Y>166</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>216</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>218</X>
-			<Y>653</Y>
+			<X>1181</X>
+			<Y>428</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>217</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1043</X>
-			<Y>775</Y>
+			<X>1200</X>
+			<Y>110</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>218</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>956</X>
-			<Y>626</Y>
+			<X>708</X>
+			<Y>710</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>219</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>682</X>
-			<Y>359</Y>
+			<X>1118</X>
+			<Y>177</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>220</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>802</X>
-			<Y>52</Y>
+			<X>356</X>
+			<Y>302</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>221</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>146</X>
-			<Y>807</Y>
+			<X>1709</X>
+			<Y>290</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>222</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1134</X>
-			<Y>829</Y>
+			<X>376</X>
+			<Y>704</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>223</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>185</X>
-			<Y>654</Y>
+			<X>997</X>
+			<Y>96</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>224</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1030</X>
-			<Y>816</Y>
+			<X>697</X>
+			<Y>932</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>225</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1005</X>
-			<Y>546</Y>
+			<X>1814</X>
+			<Y>606</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>226</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>136</X>
-			<Y>19</Y>
+			<X>745</X>
+			<Y>618</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>227</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>220</X>
-			<Y>531</Y>
+			<X>886</X>
+			<Y>180</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>228</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1339</X>
-			<Y>432</Y>
+			<X>245</X>
+			<Y>762</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>229</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>66</X>
-			<Y>178</Y>
+			<X>1645</X>
+			<Y>408</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>230</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>161</X>
-			<Y>270</Y>
+			<X>1078</X>
+			<Y>916</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>231</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>335</X>
-			<Y>798</Y>
+			<X>1323</X>
+			<Y>899</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>232</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>305</X>
-			<Y>122</Y>
+			<X>406</X>
+			<Y>539</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>233</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1375</X>
-			<Y>281</Y>
+			<X>1516</X>
+			<Y>1042</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>234</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>500</X>
-			<Y>429</Y>
+			<X>1031</X>
+			<Y>122</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>235</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>714</X>
-			<Y>844</Y>
+			<X>1032</X>
+			<Y>901</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>236</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>690</X>
-			<Y>595</Y>
+			<X>1662</X>
+			<Y>144</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>237</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1161</X>
-			<Y>311</Y>
+			<X>331</X>
+			<Y>1071</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>238</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1234</X>
-			<Y>839</Y>
+			<X>714</X>
+			<Y>671</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>239</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>922</X>
-			<Y>706</Y>
+			<X>1279</X>
+			<Y>458</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>240</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1399</X>
-			<Y>554</Y>
+			<X>655</X>
+			<Y>683</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>241</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>472</X>
-			<Y>272</Y>
+			<X>1043</X>
+			<Y>431</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>242</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>79</X>
-			<Y>297</Y>
+			<X>612</X>
+			<Y>211</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>243</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>614</X>
-			<Y>758</Y>
+			<X>1757</X>
+			<Y>430</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>244</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>851</X>
-			<Y>561</Y>
+			<X>1745</X>
+			<Y>363</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>245</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1104</X>
-			<Y>436</Y>
+			<X>1325</X>
+			<Y>564</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>246</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>485</X>
-			<Y>271</Y>
+			<X>507</X>
+			<Y>1027</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>247</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1228</X>
-			<Y>641</Y>
+			<X>271</X>
+			<Y>781</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>248</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>953</X>
-			<Y>164</Y>
+			<X>665</X>
+			<Y>436</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>249</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>989</X>
-			<Y>64</Y>
+			<X>789</X>
+			<Y>676</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>250</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>227</X>
-			<Y>584</Y>
+			<X>1419</X>
+			<Y>487</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>251</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>483</X>
-			<Y>836</Y>
+			<X>379</X>
+			<Y>638</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>252</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>261</X>
-			<Y>777</Y>
+			<X>1385</X>
+			<Y>963</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>253</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1051</X>
-			<Y>82</Y>
+			<X>1304</X>
+			<Y>233</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>254</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>809</X>
-			<Y>762</Y>
+			<X>1770</X>
+			<Y>327</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>255</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>16</X>
-			<Y>284</Y>
+			<X>219</X>
+			<Y>411</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>256</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>428</X>
-			<Y>792</Y>
+			<X>893</X>
+			<Y>1</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>257</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>669</X>
-			<Y>808</Y>
+			<X>350</X>
+			<Y>1016</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>258</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>925</X>
-			<Y>705</Y>
+			<X>431</X>
+			<Y>428</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>259</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>552</X>
-			<Y>181</Y>
+			<X>768</X>
+			<Y>1028</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>260</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>446</X>
-			<Y>445</Y>
+			<X>457</X>
+			<Y>319</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>261</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>694</X>
-			<Y>42</Y>
+			<X>782</X>
+			<Y>364</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>262</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1286</X>
-			<Y>765</Y>
+			<X>1738</X>
+			<Y>333</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>263</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>259</X>
-			<Y>899</Y>
+			<X>1359</X>
+			<Y>212</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>264</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>430</X>
-			<Y>54</Y>
+			<X>801</X>
+			<Y>302</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>265</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>596</X>
-			<Y>558</Y>
+			<X>1615</X>
+			<Y>287</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>266</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>954</X>
-			<Y>850</Y>
+			<X>1667</X>
+			<Y>565</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>267</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>464</X>
-			<Y>234</Y>
+			<X>1662</X>
+			<Y>318</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>268</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>276</X>
-			<Y>269</Y>
+			<X>1563</X>
+			<Y>342</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>269</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>626</X>
-			<Y>194</Y>
+			<X>557</X>
+			<Y>464</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>270</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>729</X>
-			<Y>454</Y>
+			<X>1078</X>
+			<Y>23</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>271</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1334</X>
-			<Y>670</Y>
+			<X>1637</X>
+			<Y>1020</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>272</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1068</X>
-			<Y>856</Y>
+			<X>1538</X>
+			<Y>1007</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>273</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>522</X>
-			<Y>32</Y>
+			<X>1505</X>
+			<Y>385</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>274</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>864</X>
-			<Y>644</Y>
+			<X>1796</X>
+			<Y>956</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>275</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>765</X>
-			<Y>366</Y>
+			<X>889</X>
+			<Y>377</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>276</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>27</X>
-			<Y>184</Y>
+			<X>726</X>
+			<Y>367</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>277</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>633</X>
-			<Y>735</Y>
+			<X>1071</X>
+			<Y>300</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>278</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>176</X>
-			<Y>670</Y>
+			<X>114</X>
+			<Y>956</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>279</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>948</X>
-			<Y>91</Y>
+			<X>536</X>
+			<Y>675</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>280</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>628</X>
-			<Y>324</Y>
+			<X>1916</X>
+			<Y>661</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>281</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1388</X>
-			<Y>892</Y>
+			<X>384</X>
+			<Y>910</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>282</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1348</X>
-			<Y>460</Y>
+			<X>1802</X>
+			<Y>536</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>283</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1261</X>
-			<Y>843</Y>
+			<X>913</X>
+			<Y>151</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>284</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1382</X>
-			<Y>576</Y>
+			<X>117</X>
+			<Y>747</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>285</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1104</X>
-			<Y>232</Y>
+			<X>111</X>
+			<Y>195</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>286</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>120</X>
-			<Y>613</Y>
+			<X>1124</X>
+			<Y>1068</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>287</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1233</X>
-			<Y>484</Y>
+			<X>168</X>
+			<Y>918</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>288</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1409</X>
-			<Y>468</Y>
+			<X>1366</X>
+			<Y>575</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>289</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1295</X>
-			<Y>605</Y>
+			<X>541</X>
+			<Y>72</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>290</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>929</X>
-			<Y>325</Y>
+			<X>278</X>
+			<Y>88</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>291</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>198</X>
-			<Y>594</Y>
+			<X>1389</X>
+			<Y>506</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>292</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>220</X>
-			<Y>722</Y>
+			<X>1636</X>
+			<Y>85</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>293</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>897</X>
-			<Y>458</Y>
+			<X>1296</X>
+			<Y>824</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>294</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>584</X>
-			<Y>510</Y>
+			<X>1132</X>
+			<Y>117</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>295</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1387</X>
-			<Y>117</Y>
+			<X>1178</X>
+			<Y>1059</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>296</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>927</X>
-			<Y>856</Y>
+			<X>1183</X>
+			<Y>243</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>297</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>623</X>
-			<Y>468</Y>
+			<X>1148</X>
+			<Y>54</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>298</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>951</X>
-			<Y>449</Y>
+			<X>1638</X>
+			<Y>976</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>299</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>908</X>
-			<Y>867</Y>
+			<X>703</X>
+			<Y>195</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>300</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>424</X>
-			<Y>401</Y>
+			<X>1120</X>
+			<Y>835</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>301</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>410</X>
-			<Y>353</Y>
+			<X>1410</X>
+			<Y>237</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>302</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>120</X>
-			<Y>639</Y>
+			<X>804</X>
+			<Y>86</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>303</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>235</X>
-			<Y>582</Y>
+			<X>927</X>
+			<Y>682</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>304</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1039</X>
-			<Y>18</Y>
+			<X>1691</X>
+			<Y>1041</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>305</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>409</X>
-			<Y>128</Y>
+			<X>1879</X>
+			<Y>44</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>306</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>184</X>
-			<Y>736</Y>
+			<X>535</X>
+			<Y>686</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>307</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>793</X>
-			<Y>94</Y>
+			<X>195</X>
+			<Y>1059</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>308</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1005</X>
-			<Y>92</Y>
+			<X>1654</X>
+			<Y>390</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>309</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1209</X>
-			<Y>604</Y>
+			<X>274</X>
+			<Y>726</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>310</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1051</X>
-			<Y>69</Y>
+			<X>775</X>
+			<Y>67</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>311</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>610</X>
-			<Y>475</Y>
+			<X>1634</X>
+			<Y>428</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>312</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>518</X>
-			<Y>688</Y>
+			<X>1444</X>
+			<Y>572</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>313</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>958</X>
-			<Y>553</Y>
+			<X>20</X>
+			<Y>802</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>314</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>618</X>
-			<Y>497</Y>
+			<X>499</X>
+			<Y>1019</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>315</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>142</X>
-			<Y>728</Y>
+			<X>1564</X>
+			<Y>892</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>316</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1025</X>
-			<Y>540</Y>
+			<X>651</X>
+			<Y>577</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>317</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1353</X>
-			<Y>651</Y>
+			<X>1655</X>
+			<Y>321</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>318</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>865</X>
-			<Y>88</Y>
+			<X>1287</X>
+			<Y>963</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>319</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>745</X>
-			<Y>733</Y>
+			<X>976</X>
+			<Y>48</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>320</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>162</X>
-			<Y>553</Y>
+			<X>1536</X>
+			<Y>138</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>321</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>254</X>
-			<Y>706</Y>
+			<X>41</X>
+			<Y>544</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>322</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>219</X>
-			<Y>242</Y>
+			<X>1041</X>
+			<Y>338</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>323</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>214</X>
-			<Y>854</Y>
+			<X>1634</X>
+			<Y>11</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>324</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1185</X>
-			<Y>836</Y>
+			<X>1063</X>
+			<Y>422</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>325</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>65</X>
-			<Y>345</Y>
+			<X>545</X>
+			<Y>156</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>326</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>331</X>
-			<Y>711</Y>
+			<X>1626</X>
+			<Y>796</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>327</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1368</X>
-			<Y>382</Y>
+			<X>529</X>
+			<Y>559</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>328</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>39</X>
-			<Y>780</Y>
+			<X>473</X>
+			<Y>846</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>329</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>305</X>
-			<Y>254</Y>
+			<X>1057</X>
+			<Y>291</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>330</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1198</X>
-			<Y>685</Y>
+			<X>692</X>
+			<Y>410</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>331</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1329</X>
-			<Y>340</Y>
+			<X>710</X>
+			<Y>294</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>332</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1340</X>
-			<Y>56</Y>
+			<X>793</X>
+			<Y>7</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>333</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>535</X>
-			<Y>126</Y>
+			<X>222</X>
+			<Y>224</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>334</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>673</X>
-			<Y>258</Y>
+			<X>378</X>
+			<Y>241</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>335</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1253</X>
-			<Y>875</Y>
+			<X>360</X>
+			<Y>196</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>336</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>158</X>
-			<Y>422</Y>
+			<X>1055</X>
+			<Y>977</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>337</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>886</X>
-			<Y>36</Y>
+			<X>1089</X>
+			<Y>643</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>338</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1424</X>
-			<Y>549</Y>
+			<X>1573</X>
+			<Y>386</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>339</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>718</X>
-			<Y>322</Y>
+			<X>15</X>
+			<Y>146</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>340</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>63</X>
-			<Y>16</Y>
+			<X>1587</X>
+			<Y>318</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>341</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>951</X>
-			<Y>665</Y>
+			<X>216</X>
+			<Y>704</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>342</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>373</X>
-			<Y>197</Y>
+			<X>1047</X>
+			<Y>1059</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>343</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>309</X>
-			<Y>618</Y>
+			<X>1828</X>
+			<Y>143</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>344</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1332</X>
-			<Y>768</Y>
+			<X>374</X>
+			<Y>707</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>345</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1265</X>
-			<Y>59</Y>
+			<X>343</X>
+			<Y>886</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>346</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>640</X>
-			<Y>192</Y>
+			<X>1701</X>
+			<Y>585</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>347</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>680</X>
-			<Y>536</Y>
+			<X>754</X>
+			<Y>833</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>348</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>179</X>
-			<Y>892</Y>
+			<X>1192</X>
+			<Y>35</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>349</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>44</X>
-			<Y>219</Y>
+			<X>1001</X>
+			<Y>449</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>350</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1207</X>
-			<Y>140</Y>
+			<X>1727</X>
+			<Y>921</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>351</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1400</X>
-			<Y>46</Y>
+			<X>570</X>
+			<Y>582</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>352</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1181</X>
-			<Y>21</Y>
+			<X>1210</X>
+			<Y>725</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>353</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>960</X>
-			<Y>373</Y>
+			<X>221</X>
+			<Y>151</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>354</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>242</X>
-			<Y>0</Y>
+			<X>254</X>
+			<Y>703</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>355</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>281</X>
-			<Y>503</Y>
+			<X>1799</X>
+			<Y>789</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>356</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1029</X>
-			<Y>62</Y>
+			<X>1904</X>
+			<Y>643</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>357</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>891</X>
-			<Y>297</Y>
+			<X>1159</X>
+			<Y>935</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>358</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1378</X>
-			<Y>684</Y>
+			<X>1868</X>
+			<Y>970</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>359</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>351</X>
-			<Y>793</Y>
+			<X>1719</X>
+			<Y>751</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>360</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>937</X>
-			<Y>57</Y>
+			<X>125</X>
+			<Y>418</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>361</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1389</X>
-			<Y>568</Y>
+			<X>1611</X>
+			<Y>222</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>362</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>858</X>
-			<Y>641</Y>
+			<X>1355</X>
+			<Y>22</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>363</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>933</X>
-			<Y>877</Y>
+			<X>990</X>
+			<Y>758</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>364</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>857</X>
-			<Y>18</Y>
+			<X>1425</X>
+			<Y>455</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>365</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>146</X>
-			<Y>796</Y>
+			<X>1084</X>
+			<Y>826</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>366</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>454</X>
-			<Y>253</Y>
+			<X>86</X>
+			<Y>14</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>367</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1221</X>
-			<Y>406</Y>
+			<X>532</X>
+			<Y>628</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>368</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1239</X>
-			<Y>444</Y>
+			<X>159</X>
+			<Y>980</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>369</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>765</X>
-			<Y>366</Y>
+			<X>1507</X>
+			<Y>468</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>370</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>854</X>
-			<Y>313</Y>
+			<X>1734</X>
+			<Y>730</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>371</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1150</X>
-			<Y>217</Y>
+			<X>1316</X>
+			<Y>974</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>372</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>714</X>
-			<Y>637</Y>
+			<X>1129</X>
+			<Y>377</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>373</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>263</X>
-			<Y>853</Y>
+			<X>483</X>
+			<Y>580</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>374</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>537</X>
-			<Y>93</Y>
+			<X>841</X>
+			<Y>758</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>375</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>546</X>
-			<Y>766</Y>
+			<X>1134</X>
+			<Y>62</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>376</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>298</X>
-			<Y>285</Y>
+			<X>570</X>
+			<Y>1075</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>377</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>234</X>
-			<Y>566</Y>
+			<X>1563</X>
+			<Y>662</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>378</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1398</X>
-			<Y>848</Y>
+			<X>1473</X>
+			<Y>600</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>379</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>686</X>
-			<Y>66</Y>
+			<X>830</X>
+			<Y>774</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>380</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>198</X>
-			<Y>66</Y>
+			<X>61</X>
+			<Y>490</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>381</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1311</X>
-			<Y>411</Y>
+			<X>1074</X>
+			<Y>844</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>382</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>950</X>
-			<Y>679</Y>
+			<X>601</X>
+			<Y>819</Y>
 		</POSITION>
 		<MAGNITUDE>1</MAGNITUDE>
 		<ID>383</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>325</X>
-			<Y>675</Y>
+			<X>208</X>
+			<Y>604</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>384</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>187</X>
-			<Y>753</Y>
+			<X>318</X>
+			<Y>964</Y>
 		</POSITION>
 		<MAGNITUDE>3</MAGNITUDE>
 		<ID>385</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1296</X>
-			<Y>840</Y>
+			<X>377</X>
+			<Y>624</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>386</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1295</X>
-			<Y>445</Y>
+			<X>1382</X>
+			<Y>725</Y>
 		</POSITION>
-		<MAGNITUDE>4</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>387</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1051</X>
-			<Y>184</Y>
+			<X>1489</X>
+			<Y>589</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>388</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>620</X>
-			<Y>311</Y>
+			<X>982</X>
+			<Y>903</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>389</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>518</X>
-			<Y>339</Y>
+			<X>16</X>
+			<Y>466</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>390</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>584</X>
-			<Y>634</Y>
+			<X>1684</X>
+			<Y>607</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>3</MAGNITUDE>
 		<ID>391</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1283</X>
-			<Y>264</Y>
+			<X>658</X>
+			<Y>833</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>392</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>907</X>
-			<Y>805</Y>
+			<X>187</X>
+			<Y>490</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>393</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>627</X>
-			<Y>815</Y>
+			<X>451</X>
+			<Y>894</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>394</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>48</X>
-			<Y>133</Y>
+			<X>1268</X>
+			<Y>862</Y>
 		</POSITION>
 		<MAGNITUDE>0</MAGNITUDE>
 		<ID>395</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>688</X>
-			<Y>465</Y>
+			<X>1473</X>
+			<Y>384</Y>
 		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
+		<MAGNITUDE>1</MAGNITUDE>
 		<ID>396</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>244</X>
-			<Y>164</Y>
+			<X>1651</X>
+			<Y>963</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>4</MAGNITUDE>
 		<ID>397</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1210</X>
-			<Y>594</Y>
+			<X>955</X>
+			<Y>757</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>398</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>1107</X>
-			<Y>799</Y>
+			<X>1523</X>
+			<Y>786</Y>
 		</POSITION>
-		<MAGNITUDE>1</MAGNITUDE>
+		<MAGNITUDE>0</MAGNITUDE>
 		<ID>399</ID>
 	</STAR>
 </SKY>

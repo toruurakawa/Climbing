@@ -11,18 +11,16 @@ void ofApp::setup(){
     ofSetFullscreen(true);
     sky.setupFromXml("mySettings.xml");
     
-    BPConstellation c;
-    c.loadFromXml();
-    constellations.push_back(c);
-    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
-        cout << it->getId() << endl;
-        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
-            cout << "   " << it2->getId() << endl;
-            if (it->getId() == it2->getId()) {
-                it2->isConstellation = true;
-            }
-        }
-    }
+//    BPConstellation c;
+//    c.loadFromXml();
+//    constellations.push_back(c);
+//    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
+//        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+//            if (it->getId() == it2->getId()) {
+//                it2->isConstellation = true;
+//            }
+//        }
+//    }
     
     
     mode = Edge;

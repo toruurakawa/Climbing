@@ -13,6 +13,7 @@ class BPSky {
     ofVec2f size;
     vector<BPStar> stars;
     ofXml xml;
+    ofShader shader;
 public:
     void setupFromXml(string filename) {
         size = ofVec2f(ofGetWidth(), ofGetHeight());
@@ -35,6 +36,7 @@ public:
         } else {
             
         }
+        shader.load("","SkyShader.frag");
     }
     
     void setup() {
@@ -57,9 +59,14 @@ public:
     
     void draw() {
         ofPushStyle();
-        ofFill();
-        ofSetColor(0);
-        ofRect(0, 0, size.x, size.y);
+//        ofFill();
+//        ofSetColor(0);
+//        ofRect(0, 0, size.x, size.y);
+        shader.begin();
+        shader.setUniform1f("u_time", ofGetElapsedTimef());
+        shader.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+        ofRect(0,0,ofGetWidth(), ofGetHeight());
+        shader.end();
         ofSetColor(255);
         for (auto it =stars.begin(); it != stars.end(); it++) {
             it->draw();

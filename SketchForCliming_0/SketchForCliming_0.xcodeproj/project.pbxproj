@@ -128,6 +128,7 @@
 		9C0A7C401BCE32E0006C65EB /* BPSky.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BPSky.hpp; sourceTree = "<group>"; };
 		9C0A7C431BCE366D006C65EB /* BPDrawing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BPDrawing.cpp; path = ../BPDrawing.cpp; sourceTree = "<group>"; };
 		9C0A7C441BCE366D006C65EB /* BPDrawing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BPDrawing.hpp; path = ../BPDrawing.hpp; sourceTree = "<group>"; };
+		9C95709E1BD0FE1800757EFC /* SkyShader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = SkyShader.frag; path = bin/data/SkyShader.frag; sourceTree = SOURCE_ROOT; };
 		9CB35CAA1BC66F0C009D3299 /* ofxQuadWarp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxQuadWarp.cpp; sourceTree = "<group>"; };
 		9CB35CAB1BC66F0C009D3299 /* ofxQuadWarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxQuadWarp.h; sourceTree = "<group>"; };
 		9CB35CBB1BC66FDA009D3299 /* BPStar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BPStar.cpp; path = ../BPStar.cpp; sourceTree = "<group>"; };
@@ -395,6 +396,7 @@
 		9C0A7C421BCE32E5006C65EB /* Sky */ = {
 			isa = PBXGroup;
 			children = (
+				9C95709E1BD0FE1800757EFC /* SkyShader.frag */,
 				9C0A7C3F1BCE32E0006C65EB /* BPSky.cpp */,
 				9C0A7C401BCE32E0006C65EB /* BPSky.hpp */,
 			);
