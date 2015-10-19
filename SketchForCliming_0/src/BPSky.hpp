@@ -64,9 +64,9 @@ public:
         ofPushStyle();
         skyShader.draw(ofGetWidth(), ofGetHeight());
         ofSetColor(255);
-        for (auto it =stars.begin(); it != stars.end(); it++) {
-            it->draw();
-        }
+//        for (auto it =stars.begin(); it != stars.end(); it++) {
+//            it->draw();
+//        }
         ofPopStyle();
     }
     

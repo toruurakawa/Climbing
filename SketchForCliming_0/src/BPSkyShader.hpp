@@ -19,7 +19,6 @@ public:
 #endif
                                        
                                        uniform vec2 u_resolution;
-                                       uniform vec2 u_mouse;
                                        uniform float u_time;
                                        
                                        // 2D Random
@@ -65,13 +64,12 @@ public:
                                            float n2 = noise((pos + vec2(u_time)) * .5);
                                            float n3 = noise((pos + vec2(u_time / 2.)) * .25);
                                            vec3 color = vec3(n1 * 0.1);
-                                           color.r += vec3(n1 * 0.2).r;
-                                           color.g += vec3(n2 * 0.2).r;
-                                           color.b += vec3(n3 * 0.2).r;
+                                           color.r += vec3(n1 * 0.3).r;
+                                           color.g += vec3(n2 * 0.3).r;
+                                           color.b += vec3(n3 * 0.3).r;
                                            gl_FragColor = vec4(color, 1.0);
                                        }
         );
-        shader.setupShaderFromSource(GL_VERTEX_SHADER, vertexShaderString);
         shader.setupShaderFromSource(GL_FRAGMENT_SHADER, fragmentShaderString);
         shader.bindDefaults();
         shader.linkProgram();

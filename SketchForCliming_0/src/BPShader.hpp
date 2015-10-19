@@ -9,6 +9,7 @@
 #pragma once 
 #include "ofMain.h"
 #define GLSL120(shader)  "#version 120 \n #extension GL_ARB_texture_rectangle : enable \n" #shader
+#define GLSL150(shader)  "#version 150 \n" #shader
 
 class BPShader {
 protected:

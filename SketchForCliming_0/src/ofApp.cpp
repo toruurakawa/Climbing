@@ -1,13 +1,16 @@
 #include "ofApp.h"
+#include "BPStarShader.hpp"
 
 BPStar starA, starB;
 BPNode node;
 ofImage BPStar::starImg;
+ofFbo fbo;
+BPStarShader s;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
     BPStar::starImg.loadImage("particle32.png");
-//    ofSetWindowPosition(2000, 0);
+    ofSetWindowPosition(2000, 0);
     ofSetFullscreen(true);
     sky.setupFromXml("mySettings.xml");
     
@@ -22,8 +25,15 @@ void ofApp::setup(){
         }
     }
     
-    
     mode = Edge;
+    fbo.allocate(ofGetWidth(), ofGetHeight());
+    
+    s.setup();
+    for (auto it = sky.getStars()->begin() ; it != sky.getStars()->end(); it++) {
+        ofVec2f v = ofVec2f(it->getPosition().x, it->getPosition().y);
+        s.addVertex(v);
+    }
+    s.setInitialPos();
 }
 
 //--------------------------------------------------------------
@@ -33,6 +43,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    fbo.begin();
     // Sky
     sky.draw();
     
@@ -41,6 +52,8 @@ void ofApp::draw(){
     for (auto it = nodes.begin(); it != nodes.end(); it++) {
         it->draw();
     }
+    
+    s.draw(ofGetWidth() / 2., ofGetHeight());
     
     // Drawings
     drawing.draw();
@@ -63,9 +76,11 @@ void ofApp::draw(){
         default:
             break;
     }
-//    ofDrawBitmapString(str, ofVec2f(10, 10));
     
     ofDrawBitmapString(ofToString(ofGetFrameRate()), ofVec2f(10, 10));
+    
+    fbo.end();    
+    fbo.draw(0, 0);
 }
 
 //--------------------------------------------------------------

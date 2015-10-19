@@ -9,7 +9,7 @@
 #pragma once
 
 #include "ofMain.h"
-
+#include "BPStarShader.hpp"
 class BPStar {
     ofVec2f pos;
     int magnitude;

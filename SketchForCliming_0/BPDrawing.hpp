@@ -36,8 +36,8 @@ public:
     
     void draw() {
         ofPushStyle();
-        ofSetColor(100, 100, 255, 255);
-        ofSetLineWidth(5);
+        ofSetColor(100, 100, 255, 200);
+        ofSetLineWidth(6);
         ofNoFill();
         ofBeginShape();
         for (auto it = pts.begin(); it != pts.end(); it++) {
