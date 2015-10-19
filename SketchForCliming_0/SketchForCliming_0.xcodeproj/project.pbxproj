@@ -13,6 +13,8 @@
 		63020F16C7E8DED980111241 /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6151136D101F857DAE12722 /* ofxCvImage.cpp */; };
 		9C0A7C411BCE32E0006C65EB /* BPSky.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A7C3F1BCE32E0006C65EB /* BPSky.cpp */; settings = {ASSET_TAGS = (); }; };
 		9C0A7C451BCE366D006C65EB /* BPDrawing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A7C431BCE366D006C65EB /* BPDrawing.cpp */; settings = {ASSET_TAGS = (); }; };
+		9C0BD7621BD484360060C6EF /* BPShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7601BD484360060C6EF /* BPShader.cpp */; settings = {ASSET_TAGS = (); }; };
+		9C0BD7651BD4859E0060C6EF /* BPSkyShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7631BD4859E0060C6EF /* BPSkyShader.cpp */; settings = {ASSET_TAGS = (); }; };
 		9CB35CB01BC66F0C009D3299 /* ofxQuadWarp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CAA1BC66F0C009D3299 /* ofxQuadWarp.cpp */; settings = {ASSET_TAGS = (); }; };
 		9CB35CBD1BC66FDA009D3299 /* BPStar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CBB1BC66FDA009D3299 /* BPStar.cpp */; settings = {ASSET_TAGS = (); }; };
 		9CB35CC01BC66FE9009D3299 /* BPNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CBE1BC66FE9009D3299 /* BPNode.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -128,6 +130,10 @@
 		9C0A7C401BCE32E0006C65EB /* BPSky.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BPSky.hpp; sourceTree = "<group>"; };
 		9C0A7C431BCE366D006C65EB /* BPDrawing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BPDrawing.cpp; path = ../BPDrawing.cpp; sourceTree = "<group>"; };
 		9C0A7C441BCE366D006C65EB /* BPDrawing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BPDrawing.hpp; path = ../BPDrawing.hpp; sourceTree = "<group>"; };
+		9C0BD7601BD484360060C6EF /* BPShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPShader.cpp; sourceTree = "<group>"; };
+		9C0BD7611BD484360060C6EF /* BPShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BPShader.hpp; sourceTree = "<group>"; };
+		9C0BD7631BD4859E0060C6EF /* BPSkyShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPSkyShader.cpp; sourceTree = "<group>"; };
+		9C0BD7641BD4859E0060C6EF /* BPSkyShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BPSkyShader.hpp; sourceTree = "<group>"; };
 		9C95709E1BD0FE1800757EFC /* SkyShader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = SkyShader.frag; path = bin/data/SkyShader.frag; sourceTree = SOURCE_ROOT; };
 		9CB35CAA1BC66F0C009D3299 /* ofxQuadWarp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxQuadWarp.cpp; sourceTree = "<group>"; };
 		9CB35CAB1BC66F0C009D3299 /* ofxQuadWarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxQuadWarp.h; sourceTree = "<group>"; };
@@ -634,6 +640,10 @@
 			children = (
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				9C0BD7601BD484360060C6EF /* BPShader.cpp */,
+				9C0BD7611BD484360060C6EF /* BPShader.hpp */,
+				9C0BD7631BD4859E0060C6EF /* BPSkyShader.cpp */,
+				9C0BD7641BD4859E0060C6EF /* BPSkyShader.hpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				9CB35CC71BC6703F009D3299 /* Class */,
 			);
@@ -750,7 +760,9 @@
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				250A95BA26587BE85DB0A353 /* ofxCvColorImage.cpp in Sources */,
 				1D5F3298C2FA073628012944 /* ofxCvContourFinder.cpp in Sources */,
+				9C0BD7651BD4859E0060C6EF /* BPSkyShader.cpp in Sources */,
 				9C0A7C451BCE366D006C65EB /* BPDrawing.cpp in Sources */,
+				9C0BD7621BD484360060C6EF /* BPShader.cpp in Sources */,
 				169D3C72FDE6C5590A1616F5 /* ofxCvFloatImage.cpp in Sources */,
 				9CB35CBD1BC66FDA009D3299 /* BPStar.cpp in Sources */,
 				9CB35CC31BC66FFA009D3299 /* BPConstellation.cpp in Sources */,

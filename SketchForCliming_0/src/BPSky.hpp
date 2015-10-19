@@ -8,12 +8,14 @@
 
 #pragma once 
 #include "BPStar.hpp"
+#include "BPSkyShader.hpp"
 
 class BPSky {
     ofVec2f size;
     vector<BPStar> stars;
     ofXml xml;
     ofShader shader;
+    BPSkyShader skyShader;
 public:
     void setupFromXml(string filename) {
         size = ofVec2f(ofGetWidth(), ofGetHeight());
@@ -37,6 +39,7 @@ public:
             
         }
         shader.load("","SkyShader.frag");
+        skyShader.setup();
     }
     
     void setup() {
@@ -59,14 +62,7 @@ public:
     
     void draw() {
         ofPushStyle();
-//        ofFill();
-//        ofSetColor(0);
-//        ofRect(0, 0, size.x, size.y);
-        shader.begin();
-        shader.setUniform1f("u_time", ofGetElapsedTimef());
-        shader.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
-        ofRect(0,0,ofGetWidth(), ofGetHeight());
-        shader.end();
+        skyShader.draw(ofGetWidth(), ofGetHeight());
         ofSetColor(255);
         for (auto it =stars.begin(); it != stars.end(); it++) {
             it->draw();

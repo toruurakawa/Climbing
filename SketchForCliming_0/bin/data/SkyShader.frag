@@ -45,13 +45,12 @@ void main() {
     vec2 pos = vec2(st * 5.);
 
     // Use the noise function
-    float n = noise(pos);
+    float n1 = noise(pos);
     float n2 = noise((pos + vec2(u_time)) * .5);
     float n3 = noise((pos + vec2(u_time / 2.)) * .25);
-    float n4 = noise((pos + vec2(u_time / 5.)) * .1);
-    vec3 color = vec3(n * 0.1);
-    color.r += smoothstep(0., 0.2, vec3(n2 * 0.2).r) * 0.1;
-    color.g += smoothstep(0., 0.2, vec3(n3 * 0.2).r) * 0.1;
-    color.b += smoothstep(0., 0.2, vec3(n4 * 0.2).r) * 0.1;
+    vec3 color = vec3(n1 * 0.1);
+    color.r += vec3(n1 * 0.2).r;
+    color.g += vec3(n2 * 0.2).r;
+    color.b += vec3(n3 * 0.2).r;
     gl_FragColor = vec4(color, 1.0);
 }

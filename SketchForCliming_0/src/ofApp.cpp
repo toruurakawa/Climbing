@@ -7,20 +7,20 @@ ofImage BPStar::starImg;
 //--------------------------------------------------------------
 void ofApp::setup(){
     BPStar::starImg.loadImage("particle32.png");
-    ofSetWindowPosition(2000, 0);
+//    ofSetWindowPosition(2000, 0);
     ofSetFullscreen(true);
     sky.setupFromXml("mySettings.xml");
     
-//    BPConstellation c;
-//    c.loadFromXml();
-//    constellations.push_back(c);
-//    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
-//        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
-//            if (it->getId() == it2->getId()) {
-//                it2->isConstellation = true;
-//            }
-//        }
-//    }
+    BPConstellation c;
+    c.loadFromXml();
+    constellations.push_back(c);
+    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
+        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+            if (it->getId() == it2->getId()) {
+                it2->isConstellation = true;
+            }
+        }
+    }
     
     
     mode = Edge;
