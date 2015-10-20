@@ -30,8 +30,7 @@ void ofApp::setup(){
     
     s.setup();
     for (auto it = sky.getStars()->begin() ; it != sky.getStars()->end(); it++) {
-        ofVec2f v = ofVec2f(it->getPosition().x, it->getPosition().y);
-        s.addVertex(v);
+        s.addStar(*it);
     }
     s.setInitialPos();
 }
@@ -79,7 +78,8 @@ void ofApp::draw(){
     
     ofDrawBitmapString(ofToString(ofGetFrameRate()), ofVec2f(10, 10));
     
-    fbo.end();    
+    fbo.end();
+    
     fbo.draw(0, 0);
 }
 

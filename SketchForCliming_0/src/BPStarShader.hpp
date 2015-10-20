@@ -8,20 +8,30 @@
 
 #pragma once
 #include "BPShader.hpp"
+#include "BPStar.hpp"
+
 class BPStarShader : BPShader {
     ofVboMesh mesh;
     ofShader initPosShader;
     ofFbo posFbo;
+    ofShader magnitudeShader;
+    ofImage magnitudeImg;
+    vector< BPStar >stars;
     int i, x, y;
     
 public:
-    void addVertex(ofVec2f v){
+    void addVertex(ofVec2f v) {
         x = i % 20;
         y = i / 20;
         cout << v << endl;
         mesh.addVertex(ofVec2f(v.x, v.y));
         mesh.addTexCoord(ofVec2f(v.x, v.y));
         i++;
+    }
+    
+    void addStar(BPStar s) {
+        stars.push_back(s);
+        addVertex(s.getPosition());
     }
     
     void setInitialPos() {
@@ -64,30 +74,41 @@ public:
         quad.draw();
         shader.end();
         posFbo.end();
+        
+        // maginitude
+        magnitudeImg.allocate(ofGetWidth(), ofGetHeight(), OF_IMAGE_COLOR_ALPHA);
+        int i = 0;
+        for (auto it = stars.begin(); it != stars.end(); it++ ) {
+            i++;
+            ofColor c = ofColor(it->getMagnitude() / 5. * 255);
+            magnitudeImg.setColor(it->getPosition().x, it->getPosition().y, c);
+        }
+        magnitudeImg.update();
+
     }
     
     void setup() {
         vertexShaderString = GLSL120(
-                               uniform sampler2DRect positionTexture;
-                               void main(){
-//                                   gl_Position = ftransform();  // 座標変換するだけ
-                                   vec2 st = gl_Vertex.xy;
-                                   vec2 texPos = texture2DRect(positionTexture, st).xy;
-                                   gl_Position = gl_ModelViewProjectionMatrix * vec4(texPos, 0.0, 1.0);
-                                   gl_PointSize = texPos.x / 10.;  // 点の大きさを変更する
-                               }
-                               );
+                                       uniform sampler2DRect positionTexture;
+                                       uniform sampler2DRect magnitudeTexture;
+                                       void main(){
+//                                           gl_Position = ftransform();  // 座標変換するだけ
+                                           vec2 st = gl_Vertex.xy;
+                                           vec2 texPos = texture2DRect(positionTexture, st).xy;
+                                           vec2 magnitude = texture2DRect(magnitudeTexture, st).xy;
+                                           gl_Position = gl_ModelViewProjectionMatrix * vec4(texPos, 0.0, 1.0);
+                                           gl_PointSize = magnitude.r * 200;  // 点の大きさを変更する
+                                       }
+                                       );
 
         fragmentShaderString = GLSL120(
                                        void main()
                                        {
                                            vec3 n;
-                                           
                                            n.xy = gl_PointCoord * 2.0 - 1.0;  // 座標値を [0, 1] → [-1, 1] に変換する
                                            float d = dot(n.xy, n.xy);
                                            float r = sqrt(d);
-                                           float md = mix(0.3, 0.8, r/0.9);
-                                           gl_FragColor = vec4(1., 1., 1.0, 1.0 - pow(r, .05));  // 白色を描くだけ
+                                           gl_FragColor = vec4(1., 1., 1., 1. - pow(r, .35));  // 白色を描くだけ
                                        }
                                        );
         shader.setupShaderFromSource(GL_VERTEX_SHADER, vertexShaderString);
@@ -96,11 +117,26 @@ public:
         shader.linkProgram();
         
         mesh.setMode(OF_PRIMITIVE_POINTS);
+        
     }
     
     void draw(int w, int h){
+        int i = 0;
+        for (auto it = stars.begin(); it != stars.end(); it++ ) {
+            i++;
+            if (i == 100) {
+                ofColor c = ofColor((1 + sin(ofGetElapsedTimef())) / 2.* 100  / 5. * 255);
+                magnitudeImg.setColor(it->getPosition().x, it->getPosition().y, c);
+            } else {
+                ofColor c = ofColor(ofNoise(ofGetElapsedTimef() / 5., it->getPosition().x, it->getPosition().y) * it->getMagnitude() / 5. * 255);
+                magnitudeImg.setColor(it->getPosition().x, it->getPosition().y, c);
+            }
+        }
+        magnitudeImg.update();
+
         shader.begin();
         shader.setUniformTexture("positionTexture", posFbo.getTextureReference(), 1);
+        shader.setUniformTexture("magnitudeTexture", magnitudeImg.getTextureReference(), 2);
         glEnable(GL_VERTEX_PROGRAM_POINT_SIZE);
         glEnable(GL_POINT_SMOOTH);
         glEnable(GL_POINT_SPRITE);
@@ -110,7 +146,7 @@ public:
         glDisable(GL_VERTEX_PROGRAM_POINT_SIZE);
         shader.end();
         
-//        posFbo.draw(0, 0, 100, 100);
+//        magnitudeImg.draw(0, 0);
     }
 
 };

@@ -44,7 +44,7 @@ public:
                                            
                                            // Cubic Hermine Curve.  Same as SmoothStep()
                                            vec2 u = f*f*(3.0-2.0*f);
-                                           u = smoothstep(0.,1.,f);
+//                                           u = smoothstep(0.,1.,f);
                                            
                                            // Mix 4 coorners porcentages
                                            return mix(a, b, u.x) + 
@@ -64,9 +64,9 @@ public:
                                            float n2 = noise((pos + vec2(u_time)) * .5);
                                            float n3 = noise((pos + vec2(u_time / 2.)) * .25);
                                            vec3 color = vec3(n1 * 0.1);
-                                           color.r += vec3(n1 * 0.3).r;
-                                           color.g += vec3(n2 * 0.3).r;
-                                           color.b += vec3(n3 * 0.3).r;
+                                           color.r += vec3(n1 * 0.1).r;
+                                           color.g += vec3(n2 * 0.1).r;
+                                           color.b += vec3(n3 * 0.1).r;
                                            gl_FragColor = vec4(color, 1.0);
                                        }
         );

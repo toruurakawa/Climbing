@@ -61,6 +61,7 @@ public:
     }
     
     void draw() {
+        ofBackground(0);
         ofPushStyle();
         skyShader.draw(ofGetWidth(), ofGetHeight());
         ofSetColor(255);

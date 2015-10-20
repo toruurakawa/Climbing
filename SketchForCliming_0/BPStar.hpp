@@ -9,11 +9,13 @@
 #pragma once
 
 #include "ofMain.h"
-#include "BPStarShader.hpp"
+//#include "BPStarShader.hpp"
+
 class BPStar {
     ofVec2f pos;
     int magnitude;
     int id;
+    
 public:
     bool isConstellation;
     bool isShootingStar;
