@@ -44,8 +44,10 @@ public:
     
     void setup() {
         size = ofVec2f(ofGetWidth(), ofGetHeight());
-        for (int i = 0; i < 400; i++) {
+        for (int i = 0; i < 200; i++) {
             ofVec2f p = ofVec2f(ofRandom(size.x), ofRandom(size.y));
+//            ofVec2f p = ofVec2f(i % 10 / 10. * ofGetWidth(), i / 10 * ofGetHeight() / 10.);
+//            ofVec2f p = ofVec2f(ofGetWidth() * 0.6, ofGetHeight() * 0.2837492364);
             BPStar s;
             s.setId(i);
             s.setPosition(p);
