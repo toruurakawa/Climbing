@@ -31,6 +31,17 @@ void ofApp::setup(){
     
     s.setup();
     s.stars = sky.getStars();
+    
+    int w = ofGetWidth();
+    int h = ofGetHeight();
+    int x = 0;
+    int y = 0;
+    warper.setSourceRect(ofRectangle(0, 0, w, h));              // this is the source rectangle which is the size of the image and located at ( 0, 0 )
+    warper.setTopLeftCornerPosition(ofPoint(x, y));             // this is position of the quad warp corners, centering the image on the screen.
+    warper.setTopRightCornerPosition(ofPoint(x + w, y));        // this is position of the quad warp corners, centering the image on the screen.
+    warper.setBottomLeftCornerPosition(ofPoint(x, y + h));      // this is position of the quad warp corners, centering the image on the screen.
+    warper.setBottomRightCornerPosition(ofPoint(x + w, y + h)); // this is position of the quad warp corners, centering the image on the screen.
+    warper.setup();
 }
 
 //--------------------------------------------------------------
@@ -80,7 +91,19 @@ void ofApp::draw(){
     
     fbo.end();
     
+//    fbo.draw(0, 0);
+    
+    //======================== get our quad warp matrix.
+    
+    ofMatrix4x4 mat = warper.getMatrix();
+    
+    //======================== use the matrix to transform our fbo.
+    
+    glPushMatrix();
+    glMultMatrixf(mat.getPtr());
     fbo.draw(0, 0);
+    glPopMatrix();
+
 }
 
 //--------------------------------------------------------------

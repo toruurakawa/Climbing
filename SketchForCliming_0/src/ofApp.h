@@ -6,6 +6,7 @@
 #include "BPSky.cpp"
 #include "BPDrawing.hpp"
 #include "BPConstellation.hpp"
+#include "ofxQuadWarp.h"
 
 typedef enum DrawMode {
     Constellation,
@@ -40,4 +41,7 @@ class ofApp : public ofBaseApp{
     DrawMode mode;
     BPConstellation tempConstellation;
     vector<BPConstellation> constellations;
+    
+    ofxQuadWarp warper;
+
 };
