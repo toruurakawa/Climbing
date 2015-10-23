@@ -84,7 +84,8 @@ public:
     
     void update() {
         if (isShootingStar) {
-            pos += ofVec2f(-10, 10);
+            pos += ofVec2f(-50, 30);
+            magnitude += 1;
         }
     }
 };

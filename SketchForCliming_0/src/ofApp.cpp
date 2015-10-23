@@ -14,27 +14,23 @@ void ofApp::setup(){
     ofSetWindowPosition(2000, 0);
     ofSetFullscreen(true);
     sky.setupFromXml("mySettings.xml");
-//    sky.setup();
     
-//    BPConstellation c;
-//    c.loadFromXml();
-//    constellations.push_back(c);
-//    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
-//        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
-//            if (it->getId() == it2->getId()) {
-//                it2->isConstellation = true;
-//            }
-//        }
-//    }
+    BPConstellation c;
+    c.loadFromXml();
+    constellations.push_back(c);
+    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
+        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+            if (it->getId() == it2->getId()) {
+                it2->isConstellation = true;
+            }
+        }
+    }
     
     mode = Edge;
     fbo.allocate(ofGetWidth(), ofGetHeight());
     
     s.setup();
-    for (auto it = sky.getStars()->begin() ; it != sky.getStars()->end(); it++) {
-        s.addStar(*it);
-    }
-    s.setInitialPos();
+    s.stars = sky.getStars();
 }
 
 //--------------------------------------------------------------
@@ -46,6 +42,7 @@ void ofApp::update(){
 void ofApp::draw(){
     fbo.begin();
     ofBackground(0);
+    
     // Sky
     sky.draw();
     
@@ -55,7 +52,7 @@ void ofApp::draw(){
         it->draw();
     }
     
-    s.draw(ofGetWidth() / 2., ofGetHeight());
+    s.draw();
     
     // Drawings
     drawing.draw();
