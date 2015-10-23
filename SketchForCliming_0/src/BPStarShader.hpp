@@ -97,19 +97,19 @@ public:
                                                uniform vec2 resolution;
                                                uniform sampler2DRect positionTexture;
                                                void main( void ) {
-                                                   vec3 c;
+                                                   float c;
                                                    vec2 p = (gl_FragCoord.xy - 0.5 * resolution.xy) / resolution.y;//-1~+1の座標系
-                                                   float s = sin(time*10. + p.x * 10. + p.y * 10.);
+                                                   float s = sin(time * 2.5 + p.x * 10. * p.y);
                                                    float ratio = resolution.x / resolution.y;
-                                                   for(int i = 0; i < 200; i++){
+                                                   float halfRatio = ratio / 2.;
+                                                   for(int i = 0; i < 100; i++){
                                                        vec3 o = texture2DRect(positionTexture, vec2(i + .5, 0.)).xyz;
-                                                       o.x = (o.x * resolution.x) / resolution.y - ratio / 2.;
+                                                       o.x = o.x * ratio - halfRatio;
                                                        o.y = (o.y - 0.5);
-                                                       float mag = o.z;
-                                                       c += vec3(0.000025 * mag * (0.8 + 0.2 * s)  / dot(p - o.xy, p - o.xy));// * (texture2DRect(positionTexture, vec2(i, 0)).b * 2. + sin(time * 20. + i/10.) * texture2DRect(positionTexture, vec2(i, 0)).b * 0.1) ;
-
+                                                       float mag = o.z * 10.;
+                                                       c += 0.000025 * mag * (0.8 + 0.2 * s)  / dot(p - o.xy, p - o.xy);
                                                    }
-                                                   gl_FragColor = vec4(c, c.r);
+                                                   gl_FragColor = vec4(c);
                                                });
         starShader.setupShaderFromSource(GL_FRAGMENT_SHADER, fragmentShaderForStar);
         starShader.bindDefaults();
@@ -214,11 +214,11 @@ public:
             int j = 0;
             for (auto it = stars.begin(); it != stars.end(); it++ ) {
                 ofColor c;
-                float x = it->getPosition().x / (float)ofGetWidth() * sin(ofGetElapsedTimef());
+                float x = it->getPosition().x / (float)ofGetWidth();
                 float y = it->getPosition().y / (float)ofGetHeight();
                 c = ofFloatColor(x,
                                  y,
-                                 it->getMagnitude(),
+                                 (it->getMagnitude() + 1) / 5.,
                                  0);
                 positionImg.setColor(j, 0, c);
                 j++;
