@@ -8,35 +8,36 @@ ofFbo fbo;
 BPStarShader s;
 int BPStar::size = 0;
 bool showEdges = false;
-bool isShot;
-float shootingTime;
-int counter = 0;
+
+#include "FirstScene.h"
+#include "SecondScene.h"
+
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofSetFrameRate(60);
-    BPStar::starImg.loadImage("particle32.png");
-    ofSetWindowPosition(2000, 0);
-    ofSetFullscreen(true);
-    sky.setupFromXml("mySettings.xml");
-//    sky.setup();
-    
-    BPConstellation c;
-    c.loadFromXml("Constellation.xml");
-    constellations.push_back(c);
-    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
-        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
-            if (it->getId() == it2->getId()) {
-                it2->isConstellation = true;
-            }
-        }
-    }
-    
+//    ofSetFrameRate(60);
+//    BPStar::starImg.loadImage("particle32.png");
+//    ofSetWindowPosition(2000, 0);
+//    ofSetFullscreen(true);
+//    sky.setupFromXml("mySettings.xml");
+////    sky.setup();s
+//    
+////    BPConstellation c;
+////    c.loadFromXml();
+////    constellations.push_back(c);
+////    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
+////        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+////            if (it->getId() == it2->getId()) {
+////                it2->isConstellation = true;
+////            }
+////        }
+////    }
+//    
     mode = Edge;
     fbo.allocate(ofGetWidth(), ofGetHeight());
-    
-    s.setup();
-    s.stars = sky.getStars();
-    
+//
+//    s.setup();
+//    s.stars = sky.getStars();
+//
     int w = ofGetWidth();
     int h = ofGetHeight();
     int x = 0;
@@ -47,54 +48,32 @@ void ofApp::setup(){
     warper.setBottomLeftCornerPosition(ofPoint(x, y + h));      // this is position of the quad warp corners, centering the image on the screen.
     warper.setBottomRightCornerPosition(ofPoint(x + w, y + h)); // this is position of the quad warp corners, centering the image on the screen.
     warper.setup();
+
+////    (x = 0, y = 0, z = 0)
+////    (x = 1404, y = 40, z = 0)
+////    (x = 1429, y = 899, z = 0)
+////    (x = 6, y = 899, z = 0)
     
-//    (x = 0, y = 0, z = 0)
-//    (x = 1404, y = 40, z = 0)
-//    (x = 1429, y = 899, z = 0)
-//    (x = 6, y = 899, z = 0)
+    sceneManager.addScene(ofPtr<ofxScene>(new FirstScene));
+    sceneManager.addScene(ofPtr<ofxScene>(new SecondScene));
+    sceneManager.setExitByTime(false);
+    sceneManager.setSceneDuration(0.3, 1.5, 0.3);
     
-    shootingTime = ofGetElapsedTimef();
-    isShot = false;
+    sceneManager.run();
+
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    sky.update();
-    s.update();
-    
-    for (auto it = constellations.begin(); it != constellations.end(); it++) {
-        it->update();
-    }
-    tempConstellation.update();
+//    sky.update();
+//    s.update();
+//    
+//    for (auto it = constellations.begin(); it != constellations.end(); it++) {
+//        it->update();
+//    }
+//    tempConstellation.update();
 
-    if (isShot && ofGetElapsedTimef() - shootingTime > .75) {
-        counter++;
-        string settingsStr, constellationStr;
-        if (counter % 2 == 0) {
-            settingsStr = "mySettings.xml";
-            constellationStr = "Constellation.xml";
-        } else {
-            settingsStr = "mySettings copy.xml";
-            constellationStr = "Constellation copy.xml";
-        }
-        
-        isShot = false;
-        sky.setupFromXml(settingsStr);
-        BPConstellation c;
-        c.loadFromXml(constellationStr);
-        constellations.clear();
-        constellations.push_back(c);
-        for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
-            for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
-                if (it->getId() == it2->getId()) {
-                    it2->isConstellation = true;
-                }
-            }
-        }
-        s.setup();
-        s.stars = sky.getStars();
-
-    }
+    sceneManager.update();
 }
 
 //--------------------------------------------------------------
@@ -102,56 +81,56 @@ void ofApp::draw(){
     fbo.begin();
     ofBackground(0);
     
-    // Sky
-    sky.draw();
-    
+//    // Sky
+//    sky.draw();
+//    
 //    // Nodes
 //    ofSetColor(255);
 //    for (auto it = nodes.begin(); it != nodes.end(); it++) {
 //        it->draw();
 //    }
-    
-    // Stars
-    s.draw();
-    
-    // Drawings
-    drawing.draw();
-    
-    // Constellations
-    for (auto it = constellations.begin(); it != constellations.end(); it++) {
-        it->draw();
-    }
-//    tempConstellation.draw();
-    
-    // Others
-    string str; 
-    switch (mode) {
-        case Constellation:
-            str = "mode: Drawing";
-            break;
-        case Edge:
-            str = "mode: Edge";
-            break;
-        case Star:
-            str = "mode: Star";
-            break;
-        default:
-            break;
-    }
-    
-    ofDrawBitmapString(ofToString(ofGetFrameRate()), ofVec2f(10, 10));
-    ofDrawBitmapString(str, ofVec2f(10, 30));
-    
-    ofPushStyle();
-    ofNoFill();
-    ofSetColor(255);
-    ofCircle(mouseX, mouseY, 20);
-    if (showEdges) {
-        ofSetLineWidth(10);
-        ofRect(0, 0, ofGetWidth(), ofGetHeight());
-    }
-    ofPopStyle();
-    
+//    
+//    s.draw();
+//    
+//    // Drawings
+//    drawing.draw();
+//    
+//    // Constellations
+//    for (auto it = constellations.begin(); it != constellations.end(); it++) {
+//        it->draw();
+//    }
+////    tempConstellation.draw();
+//    
+//    // Others
+//    string str; 
+//    switch (mode) {
+//        case Constellation:
+//            str = "mode: Drawing";
+//            break;
+//        case Edge:
+//            str = "mode: Edge";
+//            break;
+//        case Star:
+//            str = "mode: Star";
+//            break;
+//        default:
+//            break;
+//    }
+//    
+//    ofDrawBitmapString(ofToString(ofGetFrameRate()), ofVec2f(10, 10));
+//    ofDrawBitmapString(str, ofVec2f(10, 30));
+//    
+//    ofPushStyle();
+//    ofNoFill();
+//    ofSetColor(255);
+//    ofCircle(mouseX, mouseY, 20);
+//    if (showEdges) {
+//        ofSetLineWidth(10);
+//        ofRect(0, 0, ofGetWidth(), ofGetHeight());
+//    }
+//    ofPopStyle();
+
+    sceneManager.draw();
     
     fbo.end();
     
@@ -204,6 +183,7 @@ void ofApp::keyReleased(int key){
             mode = Constellation;
             break;
         case ' ':
+            sceneManager.changeScene();
             tempConstellation.setDrawing(drawing);
             constellations.push_back(tempConstellation);
             drawing.clear();
@@ -211,7 +191,7 @@ void ofApp::keyReleased(int key){
             selectedStars.clear();
             break;
         case 's':
-//            tempConstellation.setDrawing(drawing);
+            tempConstellation.setDrawing(drawing);
             sky.saveToXML();
             tempConstellation.saveToXml();
             break;
@@ -230,8 +210,6 @@ void ofApp::keyReleased(int key){
                         }
                     }
                 }
-                isShot = true;
-                shootingTime = ofGetElapsedTimef();
             }
             break;
         case 'p':

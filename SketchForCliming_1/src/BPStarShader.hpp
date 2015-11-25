@@ -146,7 +146,7 @@ public:
  
         int w = positionImg.getWidth();
         int h = positionImg.getHeight();
-        for (auto it = stars->begin(); it != stars->end();  ) {
+        for (auto it = stars->begin(); it != stars->end(); it++ ) {
             int i = 0 * w + (x * 4);
             float px = it->getPosition().x / (float)ofGetWidth();
             float py = it->getPosition().y / (float)ofGetHeight();
@@ -181,16 +181,9 @@ public:
             pixels_l[i + 2] = 100;
             pixels_l[i + 3] = 0;
             x++;
-            
-            if (it->isFinished) {
-                it = stars->erase(it);
-            } else {
-                it++;
-            }
         }
         positionImg.update();
         positionImgL.update();
-
     }
     
     void draw() {

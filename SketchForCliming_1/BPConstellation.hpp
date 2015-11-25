@@ -134,12 +134,8 @@ public:
     }
     
     void loadFromXml(){
-        loadFromXml("Constellation.xml");
-    }
-    
-    void loadFromXml(string filename){
         ofXml loadXml;
-        if( loadXml.load(filename) ) {
+        if( loadXml.load("Constellation.xml") ) {
             // Stars
             loadXml.setTo("CONSTELLATION");
             loadXml.setTo("STARS");
@@ -151,7 +147,7 @@ public:
                 loadXml.setToParent();
                 int m = loadXml.getValue<int>("MAGNITUDE");
                 int id = loadXml.getValue<int>("ID");
-                
+
                 BPStar s;
                 s.setPosition(x, y);
                 s.setMagnitude(m);
@@ -171,7 +167,7 @@ public:
                 float x_e = loadXml.getValue<float>("X");
                 float y_e = loadXml.getValue<float>("Y");
                 loadXml.setTo("../");
-                
+
                 BPNode n;
                 BPStar s_s, s_e;
                 s_s.setPosition(x_s, y_s);

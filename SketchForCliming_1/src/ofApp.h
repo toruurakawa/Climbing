@@ -8,6 +8,8 @@
 #include "BPConstellation.hpp"
 #include "ofxQuadWarp.h"
 
+#include "ofxSceneManager.h"
+
 typedef enum DrawMode {
     Constellation,
     Edge,
@@ -48,5 +50,7 @@ class ofApp : public ofBaseApp{
     vector<BPConstellation> constellations;
     
     ofxQuadWarp warper;
+
+    ofxSceneManager sceneManager;
 
 };

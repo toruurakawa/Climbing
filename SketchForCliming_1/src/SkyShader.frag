@@ -29,7 +29,7 @@ float noise (in vec2 st) {
 
     // Cubic Hermine Curve.  Same as SmoothStep()
     vec2 u = f*f*(3.0-2.0*f);
-     u = smoothstep(0.,1.,f);
+//     u = smoothstep(0.,1.,f);
 
     // Mix 4 coorners porcentages
     return mix(a, b, u.x) + 
@@ -42,15 +42,10 @@ void main() {
 
     // Scale the coordinate system to see
     // some noise in action
-    vec2 pos = vec2(st * 5.);
+    vec2 pos = vec2(st*8.0);
 
     // Use the noise function
-    float n1 = noise(pos);
-    float n2 = noise((pos + vec2(u_time)) * .5);
-    float n3 = noise((pos + vec2(u_time / 2.)) * .25);
-    vec3 color = vec3(n1 * 0.1);
-    color.r += vec3(n1 * 0.6).r;
-    color.g += vec3(n2 * 0.6).r;
-    color.b += vec3(n3 * 0.6).r;
-    gl_FragColor = vec4(color, 1.0);
+    float n = noise(pos);
+
+    gl_FragColor = vec4(vec3(n * 0.05), 1.0);
 }

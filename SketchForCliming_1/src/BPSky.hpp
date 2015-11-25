@@ -18,7 +18,6 @@ class BPSky {
     BPSkyShader skyShader;
 public:
     void setupFromXml(string filename) {
-        stars.clear();
         size = ofVec2f(ofGetWidth(), ofGetHeight());
         if (xml.load(filename)) {
             xml.setTo("STAR[0]");

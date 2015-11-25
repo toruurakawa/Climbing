@@ -93,7 +93,7 @@ public:
             if (pos.x < 0 || pos.y > ofGetHeight()) {
                 isFinished = true;
                 isShootingStar = false;
-                magnitude = 0;
+                magnitude = -1;
             }
         }
     }
