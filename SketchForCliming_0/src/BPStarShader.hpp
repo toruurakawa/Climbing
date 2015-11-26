@@ -38,7 +38,7 @@ public:
                                                        o.x = o.x * ratio - halfRatio;
                                                        o.y = (o.y - 0.5);
                                                        float mag = o.z * 10.;
-                                                       c += (10. * o.z * o_s.w + 1) * 0.005 * 5./*mag*/ * (0.5 + 0.1 * s)  / length(p - o.xy);//dot(p - o.xy, p - o.xy);
+                                                       c += (mag * o_s.w + 1) * 0.005 * 5./*mag*/ * (0.5 + 0.1 * s)  / length(p - o.xy);//dot(p - o.xy, p - o.xy);
                                                    }
                                                    gl_FragColor = vec4(c, c, c, c);
                                                });
@@ -170,7 +170,7 @@ public:
                 y_s = p.y / halfH;
                 y_l = 0.;
             }
-
+            
             pixels_s[i] = 255 * x_s;
             pixels_s[i + 1] = 255 * y_s;
             pixels_s[i + 2] = 255 * (it->getMagnitude() + 1) / 5.; // magnitude = -1 ~ 4

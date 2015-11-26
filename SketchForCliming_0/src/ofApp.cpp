@@ -14,28 +14,33 @@ int counter = 0;
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetFrameRate(60);
-    BPStar::starImg.loadImage("particle32.png");
-    ofSetWindowPosition(2000, 0);
+//    ofSetWindowPosition(2000, 0);
     ofSetFullscreen(true);
-    sky.setupFromXml("mySettings.xml");
+//    sky.setupFromXml("mySettings.xml");
 //    sky.setup();
     
-    BPConstellation c;
-    c.loadFromXml("Constellation.xml");
-    constellations.push_back(c);
-    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
-        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
-            if (it->getId() == it2->getId()) {
-                it2->isConstellation = true;
-            }
-        }
-    }
+    BPConstellation c1, c2;
+    c1.loadFromXml("Constellation.xml");
+    constellations.push_back(c1);
+    c2.loadFromXml("Constellation copy.xml");
+    constellations.push_back(c2);
+//    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
+//        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+//            if (it->getId() == it2->getId()) {
+//                it2->isConstellation = true;
+//            }
+//        }
+//    }
     
     mode = Edge;
     fbo.allocate(ofGetWidth(), ofGetHeight());
     
+        
     s.setup();
-    s.stars = sky.getStars();
+    sky.getStars();
+    s.stars = constellations[0].getStars();
+    cout << constellations[0].getStars()->size() << endl;
+    cout << s.stars->size() << endl;
     
     int w = ofGetWidth();
     int h = ofGetHeight();
@@ -55,19 +60,21 @@ void ofApp::setup(){
     
     shootingTime = ofGetElapsedTimef();
     isShot = false;
+    
+    cs.load();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     sky.update();
-    s.update();
-    
-    for (auto it = constellations.begin(); it != constellations.end(); it++) {
-        it->update();
-    }
+//    for (auto it = constellations.begin(); it != constellations.end(); it++) {
+//        it->update();
+//    }
+    constellations[counter % 2].update();
     tempConstellation.update();
+    s.update();
 
-    if (isShot && ofGetElapsedTimef() - shootingTime > .75) {
+    if (isShot && ofGetElapsedTimef() - shootingTime > 2.) {
         counter++;
         string settingsStr, constellationStr;
         if (counter % 2 == 0) {
@@ -80,10 +87,11 @@ void ofApp::update(){
         
         isShot = false;
         sky.setupFromXml(settingsStr);
-        BPConstellation c;
+        BPConstellation c = constellations[counter % 2];
         c.loadFromXml(constellationStr);
-        constellations.clear();
-        constellations.push_back(c);
+        constellations[counter % 2] = c;
+//        constellations.clear();
+//        constellations.push_back(c);
         for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
             for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
                 if (it->getId() == it2->getId()) {
@@ -92,7 +100,7 @@ void ofApp::update(){
             }
         }
         s.setup();
-        s.stars = sky.getStars();
+        s.stars = constellations[counter % 2].getStars();
 
     }
 }
@@ -118,10 +126,11 @@ void ofApp::draw(){
     drawing.draw();
     
     // Constellations
-    for (auto it = constellations.begin(); it != constellations.end(); it++) {
-        it->draw();
-    }
-//    tempConstellation.draw();
+//    for (auto it = constellations.begin(); it != constellations.end(); it++) {
+//        it->draw();
+//    }
+    constellations[counter % 2].draw();
+    tempConstellation.draw();
     
     // Others
     string str; 
@@ -221,14 +230,16 @@ void ofApp::keyReleased(int key){
             break;
         case 'x':
             if (constellations.size()) {
-                for (auto it = constellations[0].getStars()->begin();
-                     it != constellations[0].getStars()->end(); it++) {
-                    for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
-                        if (it->getId() == it2->getId()) {
-                            it2->shoot();
-                            constellations[0].isShooting = true;
-                        }
-                    }
+                constellations[counter % 2].isShooting = true;
+                for (auto it = constellations[counter % 2].getStars()->begin();
+                     it != constellations[counter % 2].getStars()->end(); it++) {
+                    it->shoot();
+//                    for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+//                        if (it->getId() == it2->getId()) {
+//                            it2->shoot();
+//                        }
+//                    }
+
                 }
                 isShot = true;
                 shootingTime = ofGetElapsedTimef();
