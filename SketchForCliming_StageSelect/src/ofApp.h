@@ -36,19 +36,12 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-    vector< vector<ofVec2f> > ptss;
-    vector<ofVec2f> pts;
-    BPDrawing drawing;
     BPSky sky;
-    vector<BPStar> selectedStars;
-    vector<BPNode> nodes;
-    BPStar* selected;
-    bool isFirst;
-    DrawMode mode;
-    BPConstellation tempConstellation;
-    vector<BPConstellation> constellations;
-    
     ofxQuadWarp warper;
-
     PLConstellations cs;
+    int currentIndex;
+    int nextIndex;
+    
+    void nextConstellation();
+    void prevConstellation();
 };

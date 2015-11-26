@@ -33,3 +33,7 @@ void PLConstellations::reloadAtIndex(int i) {
 vector<BPConstellation>* PLConstellations::getConstellations() {
     return &constellations;
 }
+
+const int PLConstellations::size() {
+    return constellations.size();
+}

@@ -17,11 +17,11 @@ class PLConstellations {
     ofDirectory dir;
     vector<BPConstellation> constellations;
     int currentIndex;
-    
 public:
     void load();
     void reloadAtIndex(int i);
     void update();
+    const int size();
     
     vector<BPConstellation>* getConstellations();
 };

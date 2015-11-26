@@ -22,8 +22,9 @@ void ofApp::setup(){
     // stars, sky, constellations
     s.setup();
     sky.getStars();
+    nextIndex = currentIndex = 0;
     cs.load();
-    s.stars = (*cs.getConstellations())[1].getStars();
+    s.stars = (*cs.getConstellations())[currentIndex].getStars();
     
     // Quad warp
     int w = ofGetWidth();
@@ -38,7 +39,6 @@ void ofApp::setup(){
     warper.setup();
 
     // App specific
-    mode = Edge;
     shootingTime = ofGetElapsedTimef();
     isShot = false;
 }
@@ -47,16 +47,18 @@ void ofApp::setup(){
 void ofApp::update(){
     sky.update();
 
-    (*cs.getConstellations())[counter % 2].update();
-    tempConstellation.update();
+    (*cs.getConstellations())[currentIndex].update();
     s.update();
 
     if (isShot && ofGetElapsedTimef() - shootingTime > 1.) {
-        counter++;
+        currentIndex = nextIndex;
         isShot = false;
-        cs.reloadAtIndex(counter % 2);
+        if (nextIndex < 0) {
+            
+        }
+        cs.reloadAtIndex(currentIndex);
         s.setup();
-        s.stars = (*cs.getConstellations())[counter % 2].getStars();
+        s.stars = (*cs.getConstellations())[currentIndex].getStars();
     }
 }
 
@@ -68,40 +70,11 @@ void ofApp::draw(){
     // Sky
     sky.draw();
     
-//    // Nodes
-//    ofSetColor(255);
-//    for (auto it = nodes.begin(); it != nodes.end(); it++) {
-//        it->draw();
-//    }
-    
     // Stars
     s.draw();
     
-    // Drawings
-    drawing.draw();
-    
     // Constellations
-    (*cs.getConstellations())[counter % 2].draw();
-//    tempConstellation.draw();
-    
-    // Others
-    string str; 
-    switch (mode) {
-        case Constellation:
-            str = "mode: Drawing";
-            break;
-        case Edge:
-            str = "mode: Edge";
-            break;
-        case Star:
-            str = "mode: Star";
-            break;
-        default:
-            break;
-    }
-    
-    ofDrawBitmapString(ofToString(ofGetFrameRate()), ofVec2f(10, 10));
-    ofDrawBitmapString(str, ofVec2f(10, 30));
+    (*cs.getConstellations())[currentIndex].draw();
     
     ofPushStyle();
     ofNoFill();
@@ -146,45 +119,16 @@ void ofApp::keyPressed(int key){
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
     switch (key) {
-        case '1':
-            mode = TopLeft;
-            break;
-        case '2':
-            mode = TopRight;
-            break;
-        case '3':
-            mode = BottomLeft;
-            break;
-        case '4':
-            mode = BottomRight;
-            break;
-        case 'e':
-            mode = Edge;
-            break;
-        case 'c':
-            mode = Constellation;
-            break;
-        case ' ':
-            tempConstellation.setDrawing(drawing);
-            constellations.push_back(tempConstellation);
-            drawing.clear();
-            nodes.clear();
-            selectedStars.clear();
-            break;
-        case 's':
-//            tempConstellation.setDrawing(drawing);
-            sky.saveToXML();
-            tempConstellation.saveToXml();
-            break;
-        case 'r':
-            tempConstellation.clear();
-            constellations.clear();
-            break;
         case 'x':
+//            nextIndex = (currentIndex + 1) % cs.size();r
+            nextIndex = (currentIndex - 1);
+            if (nextIndex < 0) {
+                nextIndex = cs.size() - 1;
+            }
             if ((*cs.getConstellations()).size()) {
-                (*cs.getConstellations())[counter % 2].isShooting = true;
-                for (auto it = (*cs.getConstellations())[counter % 2].getStars()->begin();
-                     it != (*cs.getConstellations())[counter % 2].getStars()->end(); it++) {
+                (*cs.getConstellations())[currentIndex].isShooting = true;
+                for (auto it = (*cs.getConstellations())[currentIndex].getStars()->begin();
+                     it != (*cs.getConstellations())[currentIndex].getStars()->end(); it++) {
                     it->shoot();
 //                    for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
 //                        if (it->getId() == it2->getId()) {
@@ -196,15 +140,6 @@ void ofApp::keyReleased(int key){
                 isShot = true;
                 shootingTime = ofGetElapsedTimef();
             }
-            break;
-        case 'p':
-            mode = Star;
-            break;
-        case 'l':
-            sky.setupFromXml("mySettings.xml");
-            break;
-        case 'q':
-            showEdges = false;
             break;
         default:
             break;
@@ -218,76 +153,14 @@ void ofApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-    if (mode == Constellation) {
-        ofVec2f v(x,y);
-        pts.push_back(v);
-        
-        drawing.addPoint(ofVec2f(x, y));
-    }
-    else if (mode == TopLeft) {
-        warper.setTopLeftCornerPosition(ofPoint(x, y));
-    }
-    else if (mode == TopRight) {
-        warper.setTopRightCornerPosition(ofPoint(x, y));
-    }
-    else if (mode == BottomLeft) {
-        warper.setBottomLeftCornerPosition(ofPoint(x, y));
-    }
-    else if (mode == BottomRight) {
-        warper.setBottomRightCornerPosition(ofPoint(x, y));
-    }
-
 }
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    if (mode == Constellation) {
-        ofVec2f v(x,y);
-        pts.push_back(v);
-        
-        drawing.addPoint(ofVec2f(x, y));
-    }
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-    if (mode == Edge) {
-        ofVec2f p = ofVec2f(x, y);
-        int max = 15;
-        BPStar* selected;
-        for (auto it = sky.getStars()->begin(); it != sky.getStars()->end(); it++) {
-            float dist = (p - it->getPosition()).length();
-            if (dist < max) {
-                max = dist;
-                selected = sky.getStar(it - sky.getStars()->begin());
-            }
-        }
-        if (max < 10) {
-            selectedStars.push_back(*selected);
-            tempConstellation.addStar(*selected);
-            if (selectedStars.size() == 2) {
-                BPNode n;
-                n.setStartingStar(selectedStars[0]);
-                n.setEndStar(selectedStars[1]);
-                nodes.push_back(n);
-                tempConstellation.addNode(n);
-                selectedStars.clear();
-            }
-        }
-    }
-    else if (mode == Constellation) {
-        ofVec2f v(x,y);
-        pts.push_back(v);
-        ptss.push_back(pts);
-        pts.clear();
-        
-        drawing.endPoint(ofVec2f(x, y));
-    }
-    else if (mode == Star) {
-        ofVec2f v(x,y);
-        float mag = ofRandom(5);
-        sky.addStar(v, mag);
-    }
 }
 
 //--------------------------------------------------------------
@@ -303,4 +176,14 @@ void ofApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
+}
+
+//--------------------------------------------------------------
+void ofApp::nextConstellation() {
+    
+}
+
+//--------------------------------------------------------------
+void ofApp::prevConstellation() {
+    
 }
