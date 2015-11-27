@@ -11,10 +11,12 @@
 
 void SecondScene::setup(ofPtr<ofxScene> previousScene) {
     FirstScene* scene = dynamic_cast<FirstScene *>(previousScene.get());
+    
+    cs.setup();
 }
 
 void SecondScene::update() {
-    
+    cs.update();
 }
 
 void SecondScene::draw() {
@@ -32,4 +34,6 @@ void SecondScene::draw() {
            ofGetWidth() * (14 - .25) / 15., ofGetHeight() / 2. - ofGetHeight() / 10.);
     ofLine(ofGetWidth()  * 14 / 15., ofGetHeight() / 2.,
            ofGetWidth() * (14 - .25) / 15., ofGetHeight() / 2. + ofGetHeight() / 10.);
+    
+    cs.draw();
 }

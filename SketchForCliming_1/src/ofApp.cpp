@@ -14,45 +14,20 @@ bool showEdges = false;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-//    ofSetFrameRate(60);
-//    BPStar::starImg.loadImage("particle32.png");
-//    ofSetWindowPosition(2000, 0);
-//    ofSetFullscreen(true);
-//    sky.setupFromXml("mySettings.xml");
-////    sky.setup();s
-//    
-////    BPConstellation c;
-////    c.loadFromXml();
-////    constellations.push_back(c);
-////    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
-////        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
-////            if (it->getId() == it2->getId()) {
-////                it2->isConstellation = true;
-////            }
-////        }
-////    }
-//    
-    mode = Edge;
+    ofSetFrameRate(60);
+    ofSetFullscreen(true);
+
     fbo.allocate(ofGetWidth(), ofGetHeight());
-//
-//    s.setup();
-//    s.stars = sky.getStars();
-//
     int w = ofGetWidth();
     int h = ofGetHeight();
     int x = 0;
     int y = 0;
-    warper.setSourceRect(ofRectangle(0, 0, w, h));              // this is the source rectangle which is the size of the image and located at ( 0, 0 )
-    warper.setTopLeftCornerPosition(ofPoint(x, y));             // this is position of the quad warp corners, centering the image on the screen.
-    warper.setTopRightCornerPosition(ofPoint(x + w, y));        // this is position of the quad warp corners, centering the image on the screen.
-    warper.setBottomLeftCornerPosition(ofPoint(x, y + h));      // this is position of the quad warp corners, centering the image on the screen.
-    warper.setBottomRightCornerPosition(ofPoint(x + w, y + h)); // this is position of the quad warp corners, centering the image on the screen.
+    warper.setSourceRect(ofRectangle(0, 0, w, h));
+    warper.setTopLeftCornerPosition(ofPoint(x, y));
+    warper.setTopRightCornerPosition(ofPoint(x + w, y));
+    warper.setBottomLeftCornerPosition(ofPoint(x, y + h));
+    warper.setBottomRightCornerPosition(ofPoint(x + w, y + h));
     warper.setup();
-
-////    (x = 0, y = 0, z = 0)
-////    (x = 1404, y = 40, z = 0)
-////    (x = 1429, y = 899, z = 0)
-////    (x = 6, y = 899, z = 0)
     
     sceneManager.addScene(ofPtr<ofxScene>(new FirstScene));
     sceneManager.addScene(ofPtr<ofxScene>(new SecondScene));
@@ -60,19 +35,10 @@ void ofApp::setup(){
     sceneManager.setSceneDuration(0.3, 1.5, 0.3);
     
     sceneManager.run();
-
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-//    sky.update();
-//    s.update();
-//    
-//    for (auto it = constellations.begin(); it != constellations.end(); it++) {
-//        it->update();
-//    }
-//    tempConstellation.update();
-
     sceneManager.update();
 }
 
@@ -80,68 +46,12 @@ void ofApp::update(){
 void ofApp::draw(){
     fbo.begin();
     ofBackground(0);
-    
-//    // Sky
-//    sky.draw();
-//    
-//    // Nodes
-//    ofSetColor(255);
-//    for (auto it = nodes.begin(); it != nodes.end(); it++) {
-//        it->draw();
-//    }
-//    
-//    s.draw();
-//    
-//    // Drawings
-//    drawing.draw();
-//    
-//    // Constellations
-//    for (auto it = constellations.begin(); it != constellations.end(); it++) {
-//        it->draw();
-//    }
-////    tempConstellation.draw();
-//    
-//    // Others
-//    string str; 
-//    switch (mode) {
-//        case Constellation:
-//            str = "mode: Drawing";
-//            break;
-//        case Edge:
-//            str = "mode: Edge";
-//            break;
-//        case Star:
-//            str = "mode: Star";
-//            break;
-//        default:
-//            break;
-//    }
-//    
-//    ofDrawBitmapString(ofToString(ofGetFrameRate()), ofVec2f(10, 10));
-//    ofDrawBitmapString(str, ofVec2f(10, 30));
-//    
-//    ofPushStyle();
-//    ofNoFill();
-//    ofSetColor(255);
-//    ofCircle(mouseX, mouseY, 20);
-//    if (showEdges) {
-//        ofSetLineWidth(10);
-//        ofRect(0, 0, ofGetWidth(), ofGetHeight());
-//    }
-//    ofPopStyle();
-
     sceneManager.draw();
-    
     fbo.end();
     
-//    fbo.draw(0, 0);
-    
     //======================== get our quad warp matrix.
-    
     ofMatrix4x4 mat = warper.getMatrix();
-    
     //======================== use the matrix to transform our fbo.
-    
     glPushMatrix();
     glMultMatrixf(mat.getPtr());
     fbo.draw(0, 0);

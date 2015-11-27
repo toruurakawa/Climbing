@@ -49,6 +49,8 @@ void ofApp::draw(){
     
     // Constellations
     c.draw();
+    
+    // Frame
     ofPushStyle();
     ofNoFill();
     ofSetColor(255);
@@ -58,24 +60,25 @@ void ofApp::draw(){
         ofRect(0, 0, ofGetWidth(), ofGetHeight());
     }
     ofPopStyle();
-    
-    ofCircle(200, 200, 10);
-    fbo.end();
-    
-    ofVec3f p = ofVec3f(200, 200, 0);
-    //======================== get our quad warp matrix.
-    ofMatrix4x4 mat = warper.getMatrix();
-    p = p * mat;
-    
-    //======================== use the matrix to transform our fbo.
-    glPushMatrix();
-    glMultMatrixf(mat.getPtr());
-    fbo.draw(0, 0);
-    glPopMatrix();
-    
-    ofNoFill();
-    ofCircle(p.x, p.y, 20);
-    ofFill();
+
+//    // Homography check
+//    ofCircle(200, 200, 10);
+//    fbo.end();
+//    
+//    ofVec3f p = ofVec3f(200, 200, 0);
+//    //======================== get our quad warp matrix.
+//    ofMatrix4x4 mat = warper.getMatrix();
+//    p = p * mat;
+//    
+//    //======================== use the matrix to transform our fbo.
+//    glPushMatrix();
+//    glMultMatrixf(mat.getPtr());
+//    fbo.draw(0, 0);
+//    glPopMatrix();
+//    
+//    ofNoFill();
+//    ofCircle(p.x, p.y, 20);
+//    ofFill();
 }
 
 //--------------------------------------------------------------

@@ -8,8 +8,8 @@
 
 #pragma once
 #include "BPStar.hpp"
-#include "BPNode.cpp"
-#include "BPDrawing.cpp"
+#include "BPNode.hpp"
+#include "BPDrawing.hpp"
 
 class BPConstellation {
     vector<BPStar> stars;
@@ -28,7 +28,16 @@ public:
     }
     
     void addStar(BPStar s) {
-        stars.push_back(s);
+        bool canAdd = true;
+        for (auto it = stars.begin(); it != stars.end(); it++) {
+            ofVec2f pos = it->getPosition();
+            if (s.getPosition() == pos) {
+                canAdd = false;
+            }
+        }
+        if (canAdd) {
+            stars.push_back(s);
+        }
     }
     
     void addNode(BPNode n) {
@@ -46,6 +55,9 @@ public:
     }
     
     void update() {
+        for (auto it = stars.begin(); it != stars.end(); it++) {
+            it->update();
+        }
         drawing.alpha = alpha;
         if (isShooting) {
             alpha += (0 - alpha) / 10.;
@@ -134,9 +146,16 @@ public:
     }
     
     void loadFromXml(){
+        loadFromXml("Constellation.xml");
+    }
+    
+    void loadFromXml(string filename){
+        alpha = 255;
+        isShooting = false;        
         ofXml loadXml;
-        if( loadXml.load("Constellation.xml") ) {
+        if( loadXml.load(filename) ) {
             // Stars
+            stars.clear();
             loadXml.setTo("CONSTELLATION");
             loadXml.setTo("STARS");
             loadXml.setTo("STAR[0]");
@@ -147,11 +166,12 @@ public:
                 loadXml.setToParent();
                 int m = loadXml.getValue<int>("MAGNITUDE");
                 int id = loadXml.getValue<int>("ID");
-
+                
                 BPStar s;
                 s.setPosition(x, y);
-                s.setMagnitude(m);
+                s.setMagnitude(0);
                 s.setId(id);
+                s.isConstellation = true;
                 stars.push_back(s);
             }while( loadXml.setToSibling() ); // go to next STAR
             // Nodes
@@ -167,7 +187,7 @@ public:
                 float x_e = loadXml.getValue<float>("X");
                 float y_e = loadXml.getValue<float>("Y");
                 loadXml.setTo("../");
-
+                
                 BPNode n;
                 BPStar s_s, s_e;
                 s_s.setPosition(x_s, y_s);

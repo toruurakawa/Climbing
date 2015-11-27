@@ -10,12 +10,15 @@
 #define __example_Simple__SecondScene__
 
 #include "ofxScene.h"
+#include "PLConstellationsSelector.hpp"
 
 class SecondScene : public ofxScene {
 public:
     void setup(ofPtr<ofxScene> pPreviousScene);
     void update();
     void draw();
+    
+    PLConstellationsSelector cs;
 };
 
 #endif /* defined(__example_Simple__SecondScene__) */
