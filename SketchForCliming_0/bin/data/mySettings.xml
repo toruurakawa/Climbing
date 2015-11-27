@@ -1,50 +1,34 @@
 <SKY>
 	<STAR>
 		<POSITION>
-			<X>721</X>
-			<Y>317</Y>
+			<X>531</X>
+			<Y>206</Y>
 		</POSITION>
-		<MAGNITUDE>0</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>4</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>371</X>
-			<Y>408</Y>
+			<X>896</X>
+			<Y>206</Y>
 		</POSITION>
-		<MAGNITUDE>3</MAGNITUDE>
+		<MAGNITUDE>2</MAGNITUDE>
 		<ID>5</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>563</X>
-			<Y>577</Y>
+			<X>937</X>
+			<Y>643</Y>
 		</POSITION>
 		<MAGNITUDE>2</MAGNITUDE>
 		<ID>6</ID>
 	</STAR>
 	<STAR>
 		<POSITION>
-			<X>784</X>
-			<Y>488</Y>
+			<X>548</X>
+			<Y>574</Y>
 		</POSITION>
 		<MAGNITUDE>4</MAGNITUDE>
 		<ID>7</ID>
-	</STAR>
-	<STAR>
-		<POSITION>
-			<X>863</X>
-			<Y>233</Y>
-		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
-		<ID>8</ID>
-	</STAR>
-	<STAR>
-		<POSITION>
-			<X>980</X>
-			<Y>296</Y>
-		</POSITION>
-		<MAGNITUDE>2</MAGNITUDE>
-		<ID>9</ID>
 	</STAR>
 </SKY>

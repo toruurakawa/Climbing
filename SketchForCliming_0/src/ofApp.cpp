@@ -10,22 +10,33 @@ int BPStar::size = 0;
 bool showEdges = false;
 bool isShot;
 float shootingTime;
-int counter = 1;
+int counter = 0;
 //--------------------------------------------------------------
 void ofApp::setup(){
-    // Visual settings and others
     ofSetFrameRate(60);
+    BPStar::starImg.loadImage("particle32.png");
 //    ofSetWindowPosition(2000, 0);
     ofSetFullscreen(true);
+//    sky.setupFromXml("mySettings.xml");
+    sky.setup();
+    
+//    BPConstellation c;
+//    c.loadFromXml("Constellation.xml");
+//    constellations.push_back(c);
+//    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
+//        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+//            if (it->getId() == it2->getId()) {
+//                it2->isConstellation = true;
+//            }
+//        }
+//    }
+    
+    mode = Edge;
     fbo.allocate(ofGetWidth(), ofGetHeight());
     
-    // stars, sky, constellations
     s.setup();
-    sky.getStars();
-    cs.load();
-    s.stars = (*cs.getConstellations())[1].getStars();
+    s.stars = sky.getStars();
     
-    // Quad warp
     int w = ofGetWidth();
     int h = ofGetHeight();
     int x = 0;
@@ -36,9 +47,12 @@ void ofApp::setup(){
     warper.setBottomLeftCornerPosition(ofPoint(x, y + h));      // this is position of the quad warp corners, centering the image on the screen.
     warper.setBottomRightCornerPosition(ofPoint(x + w, y + h)); // this is position of the quad warp corners, centering the image on the screen.
     warper.setup();
-
-    // App specific
-    mode = Edge;
+    
+//    (x = 0, y = 0, z = 0)
+//    (x = 1404, y = 40, z = 0)
+//    (x = 1429, y = 899, z = 0)
+//    (x = 6, y = 899, z = 0)
+    
     shootingTime = ofGetElapsedTimef();
     isShot = false;
 }
@@ -46,17 +60,40 @@ void ofApp::setup(){
 //--------------------------------------------------------------
 void ofApp::update(){
     sky.update();
-
-    (*cs.getConstellations())[counter % 2].update();
-    tempConstellation.update();
     s.update();
+    
+    for (auto it = constellations.begin(); it != constellations.end(); it++) {
+        it->update();
+    }
+    tempConstellation.update();
 
-    if (isShot && ofGetElapsedTimef() - shootingTime > 1.) {
+    if (isShot && ofGetElapsedTimef() - shootingTime > .75) {
         counter++;
+        string settingsStr, constellationStr;
+        if (counter % 2 == 0) {
+            settingsStr = "mySettings.xml";
+            constellationStr = "Constellation.xml";
+        } else {
+            settingsStr = "mySettings copy.xml";
+            constellationStr = "Constellation copy.xml";
+        }
+        
         isShot = false;
-        cs.reloadAtIndex(counter % 2);
+        sky.setupFromXml(settingsStr);
+        BPConstellation c;
+        c.loadFromXml(constellationStr);
+        constellations.clear();
+        constellations.push_back(c);
+        for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
+            for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+                if (it->getId() == it2->getId()) {
+                    it2->isConstellation = true;
+                }
+            }
+        }
         s.setup();
-        s.stars = (*cs.getConstellations())[counter % 2].getStars();
+        s.stars = sky.getStars();
+
     }
 }
 
@@ -81,7 +118,9 @@ void ofApp::draw(){
     drawing.draw();
     
     // Constellations
-    (*cs.getConstellations())[counter % 2].draw();
+    for (auto it = constellations.begin(); it != constellations.end(); it++) {
+        it->draw();
+    }
 //    tempConstellation.draw();
     
     // Others
@@ -181,17 +220,15 @@ void ofApp::keyReleased(int key){
             constellations.clear();
             break;
         case 'x':
-            if ((*cs.getConstellations()).size()) {
-                (*cs.getConstellations())[counter % 2].isShooting = true;
-                for (auto it = (*cs.getConstellations())[counter % 2].getStars()->begin();
-                     it != (*cs.getConstellations())[counter % 2].getStars()->end(); it++) {
-                    it->shoot();
-//                    for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
-//                        if (it->getId() == it2->getId()) {
-//                            it2->shoot();
-//                        }
-//                    }
-
+            if (constellations.size()) {
+                for (auto it = constellations[0].getStars()->begin();
+                     it != constellations[0].getStars()->end(); it++) {
+                    for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+                        if (it->getId() == it2->getId()) {
+                            it2->shoot();
+                            constellations[0].isShooting = true;
+                        }
+                    }
                 }
                 isShot = true;
                 shootingTime = ofGetElapsedTimef();

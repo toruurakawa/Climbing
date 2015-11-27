@@ -9,7 +9,6 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxEasingFunc.h"
 //#include "BPStarShader.hpp"
 
 class BPStar {
@@ -89,8 +88,8 @@ public:
     
     void update() {
         if (isShootingStar) {
-            pos += ofVec2f(-25 * 1.5, 15 * 1.5);
-            magnitude += .3;
+            pos += ofVec2f(-50, 30);
+            magnitude += 3;
             if (pos.x < 0 || pos.y > ofGetHeight()) {
                 isFinished = true;
                 isShootingStar = false;

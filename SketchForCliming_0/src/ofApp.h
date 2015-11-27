@@ -7,7 +7,6 @@
 #include "BPDrawing.hpp"
 #include "BPConstellation.hpp"
 #include "ofxQuadWarp.h"
-#include "PLConstellations.hpp"
 
 typedef enum DrawMode {
     Constellation,
@@ -50,5 +49,4 @@ class ofApp : public ofBaseApp{
     
     ofxQuadWarp warper;
 
-    PLConstellations cs;
 };

@@ -7,7 +7,7 @@
 //
 
 #include "PLConstellations.hpp"
-
+//--------------------------------------------------------------
 void PLConstellations::load() {
     currentIndex = 0;
     
@@ -24,16 +24,19 @@ void PLConstellations::load() {
     }
 }
 
+//--------------------------------------------------------------
 void PLConstellations::reloadAtIndex(int i) {
     BPConstellation c;
     c.loadFromXml(dir.getPath(i));
     constellations[i] = c;
 }
 
+//--------------------------------------------------------------
 vector<BPConstellation>* PLConstellations::getConstellations() {
     return &constellations;
 }
 
+//--------------------------------------------------------------
 const int PLConstellations::size() {
     return constellations.size();
 }

@@ -16,6 +16,7 @@
 		9C0BD7621BD484360060C6EF /* BPShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7601BD484360060C6EF /* BPShader.cpp */; };
 		9C0BD7651BD4859E0060C6EF /* BPSkyShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7631BD4859E0060C6EF /* BPSkyShader.cpp */; };
 		9C0BD7681BD48E880060C6EF /* BPStarShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7661BD48E880060C6EF /* BPStarShader.cpp */; };
+		9CA6A3211C080A97000D53B0 /* PLConstellationsSelector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A31F1C080A97000D53B0 /* PLConstellationsSelector.cpp */; };
 		9CB35CB01BC66F0C009D3299 /* ofxQuadWarp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CAA1BC66F0C009D3299 /* ofxQuadWarp.cpp */; };
 		9CB35CBD1BC66FDA009D3299 /* BPStar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CBB1BC66FDA009D3299 /* BPStar.cpp */; };
 		9CB35CC01BC66FE9009D3299 /* BPNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CBE1BC66FE9009D3299 /* BPNode.cpp */; };
@@ -140,6 +141,8 @@
 		9C0BD7661BD48E880060C6EF /* BPStarShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPStarShader.cpp; sourceTree = "<group>"; };
 		9C0BD7671BD48E880060C6EF /* BPStarShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BPStarShader.hpp; sourceTree = "<group>"; };
 		9C95709E1BD0FE1800757EFC /* SkyShader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = SkyShader.frag; path = bin/data/SkyShader.frag; sourceTree = SOURCE_ROOT; };
+		9CA6A31F1C080A97000D53B0 /* PLConstellationsSelector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PLConstellationsSelector.cpp; sourceTree = "<group>"; };
+		9CA6A3201C080A97000D53B0 /* PLConstellationsSelector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PLConstellationsSelector.hpp; sourceTree = "<group>"; };
 		9CB35CAA1BC66F0C009D3299 /* ofxQuadWarp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxQuadWarp.cpp; sourceTree = "<group>"; };
 		9CB35CAB1BC66F0C009D3299 /* ofxQuadWarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxQuadWarp.h; sourceTree = "<group>"; };
 		9CB35CBB1BC66FDA009D3299 /* BPStar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BPStar.cpp; path = ../BPStar.cpp; sourceTree = "<group>"; };
@@ -492,6 +495,8 @@
 				9CB35CC21BC66FFA009D3299 /* BPConstellation.hpp */,
 				9CE1DAF71C06ECEE006BB785 /* PLConstellations.cpp */,
 				9CE1DAF81C06ECEE006BB785 /* PLConstellations.hpp */,
+				9CA6A31F1C080A97000D53B0 /* PLConstellationsSelector.cpp */,
+				9CA6A3201C080A97000D53B0 /* PLConstellationsSelector.hpp */,
 			);
 			name = Constellation;
 			sourceTree = "<group>";
@@ -807,6 +812,7 @@
 				9CB35CBD1BC66FDA009D3299 /* BPStar.cpp in Sources */,
 				9CB35CC31BC66FFA009D3299 /* BPConstellation.cpp in Sources */,
 				9CB35CC01BC66FE9009D3299 /* BPNode.cpp in Sources */,
+				9CA6A3211C080A97000D53B0 /* PLConstellationsSelector.cpp in Sources */,
 				9C0BD7681BD48E880060C6EF /* BPStarShader.cpp in Sources */,
 				FB09C6B2A1DA0EA217240CB8 /* ofxCvGrayscaleImage.cpp in Sources */,
 				E212C821D1064B92DD953A42 /* ofxCvHaarFinder.cpp in Sources */,

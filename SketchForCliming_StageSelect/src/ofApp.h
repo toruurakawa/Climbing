@@ -7,8 +7,7 @@
 #include "BPDrawing.hpp"
 #include "BPConstellation.hpp"
 #include "ofxQuadWarp.h"
-#include "PLConstellations.hpp"
-
+#include "PLConstellationsSelector.hpp"
 typedef enum DrawMode {
     Constellation,
     Edge,
@@ -20,7 +19,6 @@ typedef enum DrawMode {
 } DrawMode;
 
 class ofApp : public ofBaseApp{
-
 	public:
 		void setup();
 		void update();
@@ -38,10 +36,6 @@ class ofApp : public ofBaseApp{
 
     BPSky sky;
     ofxQuadWarp warper;
-    PLConstellations cs;
-    int currentIndex;
-    int nextIndex;
     
-    void nextConstellation();
-    void prevConstellation();
+    PLConstellationsSelector c;
 };

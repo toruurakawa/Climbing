@@ -70,7 +70,7 @@ public:
         ofSetColor(255, alpha);
         for (auto it = nodes.begin(); it != nodes.end(); it++) {
             it->draw();
-        }        
+        }
         // Drawing
         drawing.draw();
         ofPopStyle();
@@ -108,7 +108,7 @@ public:
         for (auto it = nodes.begin(); it != nodes.end(); it++) {
             ofVec2f p_s = it->getStartingStar().getPosition();
             ofVec2f p_e = it->getEndStar().getPosition();
-
+            
             ofXml node;
             node.addChild("NODE");
             node.setTo("NODE");
@@ -151,7 +151,7 @@ public:
     
     void loadFromXml(string filename){
         alpha = 255;
-        isShooting = false;        
+        isShooting = false;
         ofXml loadXml;
         if( loadXml.load(filename) ) {
             // Stars

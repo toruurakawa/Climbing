@@ -21,7 +21,7 @@ public:
     bool isConstellation;
     bool isShootingStar;
     bool isFinished;
-    static ofImage starImg;
+//    static ofImage starImg;
     float shootingTime;
     static int size;
     
@@ -77,7 +77,7 @@ public:
         } else {
             ofSetColor(255);
         }
-        starImg.draw(0, 0, magnitude * 10, magnitude * 10);
+//        starImg.draw(0, 0, magnitude * 10, magnitude * 10);
         ofPopMatrix();
         ofPopStyle();
     }
