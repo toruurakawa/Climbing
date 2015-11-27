@@ -22,12 +22,15 @@ void PLConstellations::load() {
         c.loadFromXml(dir.getPath(i));
         constellations.push_back(c);
     }
+    
+    currentXMLFilename = dir.getPath(0);
 }
 
 //--------------------------------------------------------------
 void PLConstellations::reloadAtIndex(int i) {
     BPConstellation c;
     c.loadFromXml(dir.getPath(i));
+    currentXMLFilename = dir.getPath(i);
     constellations[i] = c;
 }
 
@@ -39,4 +42,9 @@ vector<BPConstellation>* PLConstellations::getConstellations() {
 //--------------------------------------------------------------
 const int PLConstellations::size() {
     return constellations.size();
+}
+
+//--------------------------------------------------------------
+const string PLConstellations::getCurrentXMLFilename() {
+    return currentXMLFilename;
 }

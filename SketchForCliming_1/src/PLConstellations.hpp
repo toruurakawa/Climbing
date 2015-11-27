@@ -17,6 +17,7 @@ class PLConstellations {
     ofDirectory dir;
     vector<BPConstellation> constellations;
     int currentIndex;
+    string currentXMLFilename;
 public:
     void load();
     void reloadAtIndex(int i);
@@ -24,6 +25,7 @@ public:
     const int size();
     
     vector<BPConstellation>* getConstellations();
+    const string getCurrentXMLFilename();
 };
 
 #endif /* PLConstellations_hpp */

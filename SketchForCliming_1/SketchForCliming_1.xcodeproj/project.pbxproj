@@ -19,6 +19,7 @@
 		9CA6A3291C080FC8000D53B0 /* BPConstellation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A3231C080FC8000D53B0 /* BPConstellation.cpp */; };
 		9CA6A32A1C080FC8000D53B0 /* PLConstellations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A3251C080FC8000D53B0 /* PLConstellations.cpp */; };
 		9CA6A32B1C080FC8000D53B0 /* PLConstellationsSelector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A3271C080FC8000D53B0 /* PLConstellationsSelector.cpp */; };
+		9CA6A32E1C08141F000D53B0 /* ThirdScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A32C1C08141F000D53B0 /* ThirdScene.cpp */; };
 		9CB35CB01BC66F0C009D3299 /* ofxQuadWarp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CAA1BC66F0C009D3299 /* ofxQuadWarp.cpp */; };
 		9CB35CBD1BC66FDA009D3299 /* BPStar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CBB1BC66FDA009D3299 /* BPStar.cpp */; };
 		9CB35CC01BC66FE9009D3299 /* BPNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CBE1BC66FE9009D3299 /* BPNode.cpp */; };
@@ -162,6 +163,8 @@
 		9CA6A3261C080FC8000D53B0 /* PLConstellations.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PLConstellations.hpp; sourceTree = "<group>"; };
 		9CA6A3271C080FC8000D53B0 /* PLConstellationsSelector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PLConstellationsSelector.cpp; sourceTree = "<group>"; };
 		9CA6A3281C080FC8000D53B0 /* PLConstellationsSelector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PLConstellationsSelector.hpp; sourceTree = "<group>"; };
+		9CA6A32C1C08141F000D53B0 /* ThirdScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThirdScene.cpp; sourceTree = "<group>"; };
+		9CA6A32D1C08141F000D53B0 /* ThirdScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdScene.h; sourceTree = "<group>"; };
 		9CB35CAA1BC66F0C009D3299 /* ofxQuadWarp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxQuadWarp.cpp; sourceTree = "<group>"; };
 		9CB35CAB1BC66F0C009D3299 /* ofxQuadWarp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxQuadWarp.h; sourceTree = "<group>"; };
 		9CB35CBB1BC66FDA009D3299 /* BPStar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BPStar.cpp; path = ../BPStar.cpp; sourceTree = "<group>"; };
@@ -587,6 +590,8 @@
 				9CCC58D61C05A22500B0F555 /* FirstScene.h */,
 				9CCC58D81C05A27100B0F555 /* SecondScene.cpp */,
 				9CCC58D91C05A27100B0F555 /* SecondScene.h */,
+				9CA6A32C1C08141F000D53B0 /* ThirdScene.cpp */,
+				9CA6A32D1C08141F000D53B0 /* ThirdScene.h */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -929,6 +934,7 @@
 				9CCC58C61C05A1D400B0F555 /* ofxSceneManager.cpp in Sources */,
 				9CCC592B1C05A2A700B0F555 /* ofxEasingSine.cpp in Sources */,
 				9CCC59241C05A2A700B0F555 /* ofxEasingCubic.cpp in Sources */,
+				9CA6A32E1C08141F000D53B0 /* ThirdScene.cpp in Sources */,
 				9CA6A3291C080FC8000D53B0 /* BPConstellation.cpp in Sources */,
 				9C0BD7621BD484360060C6EF /* BPShader.cpp in Sources */,
 				9CCC58DA1C05A27100B0F555 /* SecondScene.cpp in Sources */,

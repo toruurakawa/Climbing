@@ -27,6 +27,8 @@ public:
     void draw();
     void nextConstellation();
     void prevConstellation();
+    
+    const string currentConstellationXML();
 };
 
 #endif /* PLConstellationsSelector_hpp */

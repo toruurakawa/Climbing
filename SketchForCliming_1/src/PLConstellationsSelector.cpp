@@ -73,3 +73,8 @@ void PLConstellationsSelector::prevConstellation() {
         changingTime = ofGetElapsedTimef();
     }
 }
+
+//--------------------------------------------------------------
+const string PLConstellationsSelector::currentConstellationXML() {
+    return cs.getCurrentXMLFilename();
+}
