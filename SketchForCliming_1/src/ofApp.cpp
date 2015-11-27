@@ -1,11 +1,7 @@
 #include "ofApp.h"
 #include "BPStarShader.hpp"
 
-BPStar starA, starB;
-BPNode node;
-ofImage BPStar::starImg;
 ofFbo fbo;
-BPStarShader s;
 int BPStar::size = 0;
 bool showEdges = false;
 
@@ -143,13 +139,7 @@ void ofApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-    if (mode == Constellation) {
-        ofVec2f v(x,y);
-        pts.push_back(v);
-        
-        drawing.addPoint(ofVec2f(x, y));
-    }
-    else if (mode == TopLeft) {
+    if (mode == TopLeft) {
         warper.setTopLeftCornerPosition(ofPoint(x, y));
     }
     else if (mode == TopRight) {
@@ -161,58 +151,14 @@ void ofApp::mouseDragged(int x, int y, int button){
     else if (mode == BottomRight) {
         warper.setBottomRightCornerPosition(ofPoint(x, y));
     }
-
 }
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    if (mode == Constellation) {
-        ofVec2f v(x,y);
-        pts.push_back(v);
-        
-        drawing.addPoint(ofVec2f(x, y));
-    }
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-    if (mode == Edge) {
-        ofVec2f p = ofVec2f(x, y);
-        int max = 15;
-        BPStar* selected;
-        for (auto it = sky.getStars()->begin(); it != sky.getStars()->end(); it++) {
-            float dist = (p - it->getPosition()).length();
-            if (dist < max) {
-                max = dist;
-                selected = sky.getStar(it - sky.getStars()->begin());
-            }
-        }
-        if (max < 10) {
-            selectedStars.push_back(*selected);
-            tempConstellation.addStar(*selected);
-            if (selectedStars.size() == 2) {
-                BPNode n;
-                n.setStartingStar(selectedStars[0]);
-                n.setEndStar(selectedStars[1]);
-                nodes.push_back(n);
-                tempConstellation.addNode(n);
-                selectedStars.clear();
-            }
-        }
-    }
-    else if (mode == Constellation) {
-        ofVec2f v(x,y);
-        pts.push_back(v);
-        ptss.push_back(pts);
-        pts.clear();
-        
-        drawing.endPoint(ofVec2f(x, y));
-    }
-    else if (mode == Star) {
-        ofVec2f v(x,y);
-        float mag = ofRandom(5);
-        sky.addStar(v, mag);
-    }
 }
 
 //--------------------------------------------------------------
