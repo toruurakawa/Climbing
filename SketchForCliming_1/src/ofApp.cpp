@@ -5,8 +5,7 @@ ofFbo fbo;
 int BPStar::size = 0;
 bool showEdges = false;
 
-#include "FirstScene.h"
-#include "SecondScene.h"
+#include "Scenes.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -27,6 +26,7 @@ void ofApp::setup(){
     
     sceneManager.addScene(ofPtr<ofxScene>(new FirstScene));
     sceneManager.addScene(ofPtr<ofxScene>(new SecondScene));
+    sceneManager.addScene(ofPtr<ofxScene>(new ThirdScene));
     sceneManager.setExitByTime(false);
     sceneManager.setSceneDuration(0.3, 1.5, 0.3);
     
