@@ -12,6 +12,7 @@
 #include "BPDrawing.hpp"
 
 class BPConstellation {
+    string filename;
     vector<BPStar> stars;
     vector<BPNode> nodes;
     float alpha;
@@ -149,9 +150,10 @@ public:
         loadFromXml("Constellation.xml");
     }
     
-    void loadFromXml(string filename){
+    void loadFromXml(string _filename){
         alpha = 255;
-        isShooting = false;        
+        isShooting = false;
+        filename = _filename;
         ofXml loadXml;
         if( loadXml.load(filename) ) {
             // Stars
@@ -213,5 +215,9 @@ public:
                 loadXml.setTo("../");
             }while( loadXml.setToSibling() ); // go to next STROKE
         }
+    }
+    
+    string getFilename() {
+        return filename;
     }
 };

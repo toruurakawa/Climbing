@@ -16,6 +16,7 @@
 		9C0BD7621BD484360060C6EF /* BPShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7601BD484360060C6EF /* BPShader.cpp */; };
 		9C0BD7651BD4859E0060C6EF /* BPSkyShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7631BD4859E0060C6EF /* BPSkyShader.cpp */; };
 		9C0BD7681BD48E880060C6EF /* BPStarShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7661BD48E880060C6EF /* BPStarShader.cpp */; };
+		9C233E451C0C21BA0036D765 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C233E431C0C21BA0036D765 /* TitleScene.cpp */; };
 		9CA6A3291C080FC8000D53B0 /* BPConstellation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A3231C080FC8000D53B0 /* BPConstellation.cpp */; };
 		9CA6A32A1C080FC8000D53B0 /* PLConstellations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A3251C080FC8000D53B0 /* PLConstellations.cpp */; };
 		9CA6A32B1C080FC8000D53B0 /* PLConstellationsSelector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A3271C080FC8000D53B0 /* PLConstellationsSelector.cpp */; };
@@ -156,6 +157,8 @@
 		9C0BD7641BD4859E0060C6EF /* BPSkyShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BPSkyShader.hpp; sourceTree = "<group>"; };
 		9C0BD7661BD48E880060C6EF /* BPStarShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPStarShader.cpp; sourceTree = "<group>"; };
 		9C0BD7671BD48E880060C6EF /* BPStarShader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BPStarShader.hpp; sourceTree = "<group>"; };
+		9C233E431C0C21BA0036D765 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleScene.cpp; sourceTree = "<group>"; };
+		9C233E441C0C21BA0036D765 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
 		9C95709E1BD0FE1800757EFC /* SkyShader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = SkyShader.frag; path = bin/data/SkyShader.frag; sourceTree = SOURCE_ROOT; };
 		9CA6A3231C080FC8000D53B0 /* BPConstellation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPConstellation.cpp; sourceTree = "<group>"; };
 		9CA6A3241C080FC8000D53B0 /* BPConstellation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BPConstellation.hpp; sourceTree = "<group>"; };
@@ -250,7 +253,7 @@
 		E45BE9770E8CC7DD009D7055 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
-		E4B69B5B0A3A1756003C02F2 /* SketchForCliming_1Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchForCliming_1Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69B5B0A3A1756003C02F2 /* PRANETALIUMINGDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRANETALIUMINGDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
@@ -591,6 +594,8 @@
 				9CCC58D61C05A22500B0F555 /* FirstScene.h */,
 				9CCC58D81C05A27100B0F555 /* SecondScene.cpp */,
 				9CCC58D91C05A27100B0F555 /* SecondScene.h */,
+				9C233E431C0C21BA0036D765 /* TitleScene.cpp */,
+				9C233E441C0C21BA0036D765 /* TitleScene.h */,
 				9CA6A32C1C08141F000D53B0 /* ThirdScene.cpp */,
 				9CA6A32D1C08141F000D53B0 /* ThirdScene.h */,
 				9CA6A32F1C081A97000D53B0 /* Scenes.h */,
@@ -798,7 +803,7 @@
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				E45BE5980E8CC70C009D7055 /* frameworks */,
-				E4B69B5B0A3A1756003C02F2 /* SketchForCliming_1Debug.app */,
+				E4B69B5B0A3A1756003C02F2 /* PRANETALIUMINGDebug.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -835,9 +840,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* SketchForCliming_1 */ = {
+		E4B69B5A0A3A1756003C02F2 /* PRANETALIUMING */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "SketchForCliming_1" */;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "PRANETALIUMING" */;
 			buildPhases = (
 				E4B69B580A3A1756003C02F2 /* Sources */,
 				E4B69B590A3A1756003C02F2 /* Frameworks */,
@@ -849,9 +854,9 @@
 			dependencies = (
 				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
 			);
-			name = SketchForCliming_1;
+			name = PRANETALIUMING;
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* SketchForCliming_1Debug.app */;
+			productReference = E4B69B5B0A3A1756003C02F2 /* PRANETALIUMINGDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -862,7 +867,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "SketchForCliming_1" */;
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "PRANETALIUMING" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -883,7 +888,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				E4B69B5A0A3A1756003C02F2 /* SketchForCliming_1 */,
+				E4B69B5A0A3A1756003C02F2 /* PRANETALIUMING */,
 			);
 		};
 /* End PBXProject section */
@@ -952,6 +957,7 @@
 				9C0BD7681BD48E880060C6EF /* BPStarShader.cpp in Sources */,
 				9CCC59261C05A2A700B0F555 /* ofxEasingExpo.cpp in Sources */,
 				FB09C6B2A1DA0EA217240CB8 /* ofxCvGrayscaleImage.cpp in Sources */,
+				9C233E451C0C21BA0036D765 /* TitleScene.cpp in Sources */,
 				E212C821D1064B92DD953A42 /* ofxCvHaarFinder.cpp in Sources */,
 				9C0A7C411BCE32E0006C65EB /* BPSky.cpp in Sources */,
 				63020F16C7E8DED980111241 /* ofxCvImage.cpp in Sources */,
@@ -1094,6 +1100,7 @@
 		E4B69B600A3A1757003C02F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1172,7 +1179,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
 				);
-				PRODUCT_NAME = SketchForCliming_1Debug;
+				PRODUCT_NAME = PRANETALIUMINGDebug;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1180,6 +1187,7 @@
 		E4B69B610A3A1757003C02F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1257,7 +1265,7 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
 				);
-				PRODUCT_NAME = SketchForCliming_1Debug;
+				PRODUCT_NAME = PRANETALIUMINGDebug;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1265,7 +1273,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "SketchForCliming_1" */ = {
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "PRANETALIUMING" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B4E0A3A1720003C02F2 /* Debug */,
@@ -1274,7 +1282,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "SketchForCliming_1" */ = {
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "PRANETALIUMING" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,

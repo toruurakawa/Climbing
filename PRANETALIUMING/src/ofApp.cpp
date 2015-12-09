@@ -26,6 +26,7 @@ void ofApp::setup(){
     
     sceneManager.addScene(ofPtr<ofxScene>(new FirstScene));
     sceneManager.addScene(ofPtr<ofxScene>(new SecondScene));
+    sceneManager.addScene(ofPtr<ofxScene>(new TitleScene));
     sceneManager.addScene(ofPtr<ofxScene>(new ThirdScene));
     sceneManager.setExitByTime(false);
     sceneManager.setSceneDuration(0.3, 1.5, 0.3);

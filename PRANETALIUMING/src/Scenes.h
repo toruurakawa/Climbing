@@ -11,6 +11,7 @@
 
 #include "FirstScene.h"
 #include "SecondScene.h"
+#include "TitleScene.h"
 #include "ThirdScene.h"
 
 #endif /* Scenes_h */

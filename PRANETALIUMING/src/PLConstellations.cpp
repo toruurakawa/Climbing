@@ -15,6 +15,7 @@ void PLConstellations::load() {
     dir.allowExt("xml");
     dir.listDir();
  
+    constellations.clear();
     for(int i = 0; i < dir.size(); i++){
         ofLogNotice(dir.getPath(i));
         

@@ -18,6 +18,8 @@ public:
     void update();
     void draw();
     
+    void keyReleased(int key);
+    
     PLConstellationsSelector cs;
 };
 

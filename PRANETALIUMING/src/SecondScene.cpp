@@ -24,6 +24,7 @@ void SecondScene::draw() {
     
     // Arrow
     ofSetColor(255);
+    
     //  Left
     ofLine(ofGetWidth() / 15., ofGetHeight() / 2.,
            ofGetWidth() * 1.25 / 15., ofGetHeight() / 2. - ofGetHeight() / 10.);
@@ -36,4 +37,18 @@ void SecondScene::draw() {
            ofGetWidth() * (14 - .25) / 15., ofGetHeight() / 2. + ofGetHeight() / 10.);
     
     cs.draw();
+}
+
+void SecondScene::keyReleased(int key) {
+    switch (key) {
+        case 'x':
+            cs.nextConstellation();
+            break;
+        case 'z':
+            cs.prevConstellation();
+            break;
+            
+        default:
+            break;
+    }
 }
