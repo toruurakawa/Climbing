@@ -13,7 +13,7 @@
 class BPStarShader : BPShader {
     ofVboMesh mesh;
     ofShader starShader;
-    ofImage positionImg, positionImgL;
+    ofImage positionImg, positionImgL, starColors;
     ofFloatImage positionImgFloat;
 public:
     vector< BPStar >* stars;
@@ -25,8 +25,10 @@ public:
                                                uniform vec2 resolution;
                                                uniform sampler2DRect positionTexture_S;
                                                uniform sampler2DRect positionTexture_L;
+                                               uniform sampler2DRect colorTexture;
                                                void main( void ) {
                                                    float c;
+                                                   vec4 colV = vec4(0., 0., 0., 1);
                                                    vec2 p = (gl_FragCoord.xy - 0.5 * resolution.xy) / resolution.y;//-1~+1の座標系
                                                    float s = sin(time * 2.75 + p.x * 10. * p.y);
                                                    float ratio = resolution.x / resolution.y;
@@ -34,13 +36,15 @@ public:
                                                    for(int i = 0; i < size; i++){
                                                        vec4 o_s = texture2DRect(positionTexture_S, vec2(i + .5, 0.));
                                                        vec4 o_l = texture2DRect(positionTexture_L, vec2(i + .5, 0.));
+                                                       vec4 s_c = texture2DRect(colorTexture, vec2(i + .5, 0.));
                                                        vec4 o = vec4(vec2(o_s.xy + o_l.xy) / 2., o_s.z, o_s.w);
                                                        o.x = o.x * ratio - halfRatio;
                                                        o.y = (o.y - 0.5);
                                                        float mag = o.z * 10.;
-                                                       c += o_l.w * (10. * o.z * o_s.w + 1) * 0.005 * 5./*mag*/ * (0.5 + 0.1 * s)  / length(p - o.xy);//dot(p - o.xy, p - o.xy);
+                                                       c = o_l.w * (10. * o.z * o_s.w + 1) * 0.005 * 5./*mag*/ * (0.5 + 0.1 * s)  / length(p - o.xy);//dot(p - o.xy, p - o.xy);
+                                                       colV += s_c * c;
                                                    }
-                                                   gl_FragColor = vec4(c, c, c, c);
+                                                   gl_FragColor = colV;//vec4(c, c, c, c);
                                                });
         starShader.setupShaderFromSource(GL_FRAGMENT_SHADER, fragmentShaderForStar);
         starShader.bindDefaults();
@@ -49,6 +53,7 @@ public:
         positionImgFloat.allocate(200, 1, OF_IMAGE_COLOR_ALPHA);
         positionImg.allocate(200, 1, OF_IMAGE_COLOR_ALPHA);
         positionImgL.allocate(200, 1, OF_IMAGE_COLOR_ALPHA);
+        starColors.allocate(200, 1, OF_IMAGE_COLOR_ALPHA);
     }
     
     void update() {
@@ -143,6 +148,7 @@ public:
         int x = 0;
         unsigned char * pixels_s = positionImg.getPixels();
         unsigned char * pixels_l = positionImgL.getPixels();
+        unsigned char * pixels_c = starColors.getPixels();
  
         int w = positionImg.getWidth();
         int h = positionImg.getHeight();
@@ -180,10 +186,31 @@ public:
             pixels_l[i + 1] = 255 * y_l;
             pixels_l[i + 2] = 100;
             pixels_l[i + 3] = 255 * !it->isFinished;
+            
+            ofColor c;
+            switch (i % 3) {
+                case 0:
+                    c = ofColor::red;
+                    break;
+                case 1:
+                    c = ofColor::green;
+                    break;
+                case 2:
+                    c = ofColor::blue;
+                    break;
+                default:
+                    break;
+            }
+            pixels_c[i]     = c.r;
+            pixels_c[i + 1] = c.g;
+            pixels_c[i + 2] = c.b;
+            pixels_c[i + 3] = 255;
+
             x++;
         }
         positionImg.update();
         positionImgL.update();
+        starColors.update();
     }
     
     void draw() {
@@ -191,6 +218,7 @@ public:
         starShader.setUniform1f("size", stars->size());
         starShader.setUniformTexture("positionTexture_S", positionImg.getTextureReference(), 1);
         starShader.setUniformTexture("positionTexture_L", positionImgL.getTextureReference(), 2);
+        starShader.setUniformTexture("colorTexture", starColors.getTextureReference(), 3);
         starShader.setUniform1f("time", ofGetElapsedTimef());
         starShader.setUniform2f("resolution", ofGetWidth(), ofGetHeight());
         ofMesh quad;
