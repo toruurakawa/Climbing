@@ -26,6 +26,7 @@ public:
     
     vector<BPConstellation>* getConstellations();
     const string getCurrentXMLFilename();
+    const string getCurrentName();
 };
 
 #endif /* PLConstellations_hpp */

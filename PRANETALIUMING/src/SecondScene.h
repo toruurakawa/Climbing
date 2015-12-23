@@ -11,6 +11,8 @@
 
 #include "ofxScene.h"
 #include "PLConstellationsSelector.hpp"
+#include "ofxTrueTypeFontUC.h"
+#include "Constants.h"
 
 class SecondScene : public ofxScene {
 public:
@@ -21,6 +23,7 @@ public:
     void keyReleased(int key);
     
     PLConstellationsSelector cs;
+    ofxTrueTypeFontUC font;
 };
 
 #endif /* defined(__example_Simple__SecondScene__) */

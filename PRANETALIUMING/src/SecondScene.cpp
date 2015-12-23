@@ -13,6 +13,7 @@ void SecondScene::setup(ofPtr<ofxScene> previousScene) {
     FirstScene* scene = dynamic_cast<FirstScene *>(previousScene.get());
     
     cs.setup();
+    font.loadFont("fonts/AxisCondStd-Medium.otf", FONT_CONSTNAME);
 }
 
 void SecondScene::update() {
@@ -37,6 +38,8 @@ void SecondScene::draw() {
            ofGetWidth() * (14 - .25) / 15., ofGetHeight() / 2. + ofGetHeight() / 10.);
     
     cs.draw();
+    
+    font.drawString(cs.currentConstellationName(), 100, 100);
 }
 
 void SecondScene::keyReleased(int key) {

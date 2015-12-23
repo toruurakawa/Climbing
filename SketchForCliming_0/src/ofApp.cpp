@@ -105,11 +105,11 @@ void ofApp::draw(){
     // Sky
     sky.draw();
     
-//    // Nodes
-//    ofSetColor(255);
-//    for (auto it = nodes.begin(); it != nodes.end(); it++) {
-//        it->draw();
-//    }
+    // Nodes
+    ofSetColor(255);
+    for (auto it = nodes.begin(); it != nodes.end(); it++) {
+        it->draw();
+    }
     
     // Stars
     s.draw();

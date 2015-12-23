@@ -38,7 +38,7 @@ public:
                                                        o.x = o.x * ratio - halfRatio;
                                                        o.y = (o.y - 0.5);
                                                        float mag = o.z * 10.;
-                                                       c += (10. * o.z * o_s.w + 1) * 0.005 * 5./*mag*/ * (0.5 + 0.1 * s)  / length(p - o.xy);//dot(p - o.xy, p - o.xy);
+                                                       c += o_l.w * (10. * o.z * o_s.w + 1) * 0.005 * 5./*mag*/ * (0.5 + 0.1 * s)  / length(p - o.xy);//dot(p - o.xy, p - o.xy);
                                                    }
                                                    gl_FragColor = vec4(c, c, c, c);
                                                });
@@ -179,7 +179,7 @@ public:
             pixels_l[i] = 255 * x_l;
             pixels_l[i + 1] = 255 * y_l;
             pixels_l[i + 2] = 100;
-            pixels_l[i + 3] = 0;
+            pixels_l[i + 3] = 255 * !it->isFinished;
             x++;
         }
         positionImg.update();

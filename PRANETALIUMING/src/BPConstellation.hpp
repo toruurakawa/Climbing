@@ -13,6 +13,7 @@
 
 class BPConstellation {
     string filename;
+    string name;
     vector<BPStar> stars;
     vector<BPNode> nodes;
     float alpha;
@@ -154,6 +155,8 @@ public:
         alpha = 255;
         isShooting = false;
         filename = _filename;
+        vector<string> strVec = ofSplitString(filename, "/");
+        name = ofSplitString(strVec[1], ".")[0];
         ofXml loadXml;
         if( loadXml.load(filename) ) {
             // Stars
@@ -219,5 +222,9 @@ public:
     
     string getFilename() {
         return filename;
+    }
+    
+    string getName() {
+        return name;
     }
 };

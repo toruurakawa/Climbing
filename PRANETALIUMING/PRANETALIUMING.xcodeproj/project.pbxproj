@@ -17,6 +17,7 @@
 		9C0BD7651BD4859E0060C6EF /* BPSkyShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7631BD4859E0060C6EF /* BPSkyShader.cpp */; };
 		9C0BD7681BD48E880060C6EF /* BPStarShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7661BD48E880060C6EF /* BPStarShader.cpp */; };
 		9C233E451C0C21BA0036D765 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C233E431C0C21BA0036D765 /* TitleScene.cpp */; };
+		9CA4A89C1C293CAC005C3959 /* ofxTrueTypeFontUC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4A8971C293CAC005C3959 /* ofxTrueTypeFontUC.cpp */; };
 		9CA6A3291C080FC8000D53B0 /* BPConstellation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A3231C080FC8000D53B0 /* BPConstellation.cpp */; };
 		9CA6A32A1C080FC8000D53B0 /* PLConstellations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A3251C080FC8000D53B0 /* PLConstellations.cpp */; };
 		9CA6A32B1C080FC8000D53B0 /* PLConstellationsSelector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6A3271C080FC8000D53B0 /* PLConstellationsSelector.cpp */; };
@@ -160,6 +161,9 @@
 		9C233E431C0C21BA0036D765 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleScene.cpp; sourceTree = "<group>"; };
 		9C233E441C0C21BA0036D765 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScene.h; sourceTree = "<group>"; };
 		9C95709E1BD0FE1800757EFC /* SkyShader.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = SkyShader.frag; path = bin/data/SkyShader.frag; sourceTree = SOURCE_ROOT; };
+		9CA4A8971C293CAC005C3959 /* ofxTrueTypeFontUC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTrueTypeFontUC.cpp; sourceTree = "<group>"; };
+		9CA4A8981C293CAC005C3959 /* ofxTrueTypeFontUC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTrueTypeFontUC.h; sourceTree = "<group>"; };
+		9CA4A89D1C29528C005C3959 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		9CA6A3231C080FC8000D53B0 /* BPConstellation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BPConstellation.cpp; sourceTree = "<group>"; };
 		9CA6A3241C080FC8000D53B0 /* BPConstellation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BPConstellation.hpp; sourceTree = "<group>"; };
 		9CA6A3251C080FC8000D53B0 /* PLConstellations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PLConstellations.cpp; sourceTree = "<group>"; };
@@ -504,6 +508,24 @@
 			name = highgui;
 			sourceTree = "<group>";
 		};
+		9CA4A88C1C293CAC005C3959 /* ofxTrueTypeFontUC */ = {
+			isa = PBXGroup;
+			children = (
+				9CA4A8961C293CAC005C3959 /* src */,
+			);
+			name = ofxTrueTypeFontUC;
+			path = ../../../addons/ofxTrueTypeFontUC;
+			sourceTree = "<group>";
+		};
+		9CA4A8961C293CAC005C3959 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9CA4A8971C293CAC005C3959 /* ofxTrueTypeFontUC.cpp */,
+				9CA4A8981C293CAC005C3959 /* ofxTrueTypeFontUC.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		9CB35C961BC66F0C009D3299 /* ofxQuadWarp */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +621,7 @@
 				9CA6A32C1C08141F000D53B0 /* ThirdScene.cpp */,
 				9CA6A32D1C08141F000D53B0 /* ThirdScene.h */,
 				9CA6A32F1C081A97000D53B0 /* Scenes.h */,
+				9CA4A89D1C29528C005C3959 /* Constants.h */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -690,6 +713,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				9CA4A88C1C293CAC005C3959 /* ofxTrueTypeFontUC */,
 				9CCC58DB1C05A2A700B0F555 /* ofxTween */,
 				9CCC58571C05A1D400B0F555 /* ofxSceneManager */,
 				9CB35C961BC66F0C009D3299 /* ofxQuadWarp */,
@@ -937,6 +961,7 @@
 				9C0A7C451BCE366D006C65EB /* BPDrawing.cpp in Sources */,
 				9CCC59201C05A2A700B0F555 /* ofxEasing.cpp in Sources */,
 				9CA6A32B1C080FC8000D53B0 /* PLConstellationsSelector.cpp in Sources */,
+				9CA4A89C1C293CAC005C3959 /* ofxTrueTypeFontUC.cpp in Sources */,
 				9CCC592C1C05A2A700B0F555 /* ofxTween.cpp in Sources */,
 				9CCC58C61C05A1D400B0F555 /* ofxSceneManager.cpp in Sources */,
 				9CCC592B1C05A2A700B0F555 /* ofxEasingSine.cpp in Sources */,
@@ -1101,6 +1126,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1188,6 +1214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (

@@ -49,3 +49,8 @@ const int PLConstellations::size() {
 const string PLConstellations::getCurrentXMLFilename() {
     return currentXMLFilename;
 }
+
+//--------------------------------------------------------------
+const string PLConstellations::getCurrentName() {
+    return constellations[currentIndex].getName();
+}

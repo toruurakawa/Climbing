@@ -28,7 +28,9 @@ public:
     void nextConstellation();
     void prevConstellation();
     
+    PLConstellations* getConstellations();
     const string currentConstellationXML();
+    const string currentConstellationName();
 };
 
 #endif /* PLConstellationsSelector_hpp */

@@ -88,12 +88,18 @@ public:
     
     void update() {
         if (isShootingStar) {
-            pos += ofVec2f(-50, 30);
+            pos += ofVec2f(-50, 30) * 0.7;
+            if (pos.x <= 0) {
+                pos.x = 0;
+            }
+            if (pos.y > ofGetHeight()) {
+                pos.y = ofGetHeight();
+            }
             magnitude += 3;
-            if (pos.x < 0 || pos.y > ofGetHeight()) {
+            if (pos.x <= 0 || pos.y >= ofGetHeight()) {
                 isFinished = true;
                 isShootingStar = false;
-                magnitude = -1;
+                magnitude = 0;
             }
         }
     }

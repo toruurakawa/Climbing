@@ -75,6 +75,16 @@ void PLConstellationsSelector::prevConstellation() {
 }
 
 //--------------------------------------------------------------
+PLConstellations* PLConstellationsSelector::getConstellations() {
+    return &cs;
+}
+
+//--------------------------------------------------------------
 const string PLConstellationsSelector::currentConstellationXML() {
     return cs.getCurrentXMLFilename();
+}
+
+//--------------------------------------------------------------
+const string PLConstellationsSelector::currentConstellationName() {
+    return (*cs.getConstellations())[currentIndex].getName();
 }

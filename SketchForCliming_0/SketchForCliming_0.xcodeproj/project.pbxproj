@@ -11,15 +11,15 @@
 		1D5F3298C2FA073628012944 /* ofxCvContourFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C76DE5C29BDBD2CAA1DD0021 /* ofxCvContourFinder.cpp */; };
 		250A95BA26587BE85DB0A353 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9C7160245B19131DAE6128 /* ofxCvColorImage.cpp */; };
 		63020F16C7E8DED980111241 /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6151136D101F857DAE12722 /* ofxCvImage.cpp */; };
-		9C0A7C411BCE32E0006C65EB /* BPSky.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A7C3F1BCE32E0006C65EB /* BPSky.cpp */; settings = {ASSET_TAGS = (); }; };
-		9C0A7C451BCE366D006C65EB /* BPDrawing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A7C431BCE366D006C65EB /* BPDrawing.cpp */; settings = {ASSET_TAGS = (); }; };
-		9C0BD7621BD484360060C6EF /* BPShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7601BD484360060C6EF /* BPShader.cpp */; settings = {ASSET_TAGS = (); }; };
-		9C0BD7651BD4859E0060C6EF /* BPSkyShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7631BD4859E0060C6EF /* BPSkyShader.cpp */; settings = {ASSET_TAGS = (); }; };
-		9C0BD7681BD48E880060C6EF /* BPStarShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7661BD48E880060C6EF /* BPStarShader.cpp */; settings = {ASSET_TAGS = (); }; };
-		9CB35CB01BC66F0C009D3299 /* ofxQuadWarp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CAA1BC66F0C009D3299 /* ofxQuadWarp.cpp */; settings = {ASSET_TAGS = (); }; };
-		9CB35CBD1BC66FDA009D3299 /* BPStar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CBB1BC66FDA009D3299 /* BPStar.cpp */; settings = {ASSET_TAGS = (); }; };
-		9CB35CC01BC66FE9009D3299 /* BPNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CBE1BC66FE9009D3299 /* BPNode.cpp */; settings = {ASSET_TAGS = (); }; };
-		9CB35CC31BC66FFA009D3299 /* BPConstellation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CC11BC66FFA009D3299 /* BPConstellation.cpp */; settings = {ASSET_TAGS = (); }; };
+		9C0A7C411BCE32E0006C65EB /* BPSky.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A7C3F1BCE32E0006C65EB /* BPSky.cpp */; };
+		9C0A7C451BCE366D006C65EB /* BPDrawing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A7C431BCE366D006C65EB /* BPDrawing.cpp */; };
+		9C0BD7621BD484360060C6EF /* BPShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7601BD484360060C6EF /* BPShader.cpp */; };
+		9C0BD7651BD4859E0060C6EF /* BPSkyShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7631BD4859E0060C6EF /* BPSkyShader.cpp */; };
+		9C0BD7681BD48E880060C6EF /* BPStarShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD7661BD48E880060C6EF /* BPStarShader.cpp */; };
+		9CB35CB01BC66F0C009D3299 /* ofxQuadWarp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CAA1BC66F0C009D3299 /* ofxQuadWarp.cpp */; };
+		9CB35CBD1BC66FDA009D3299 /* BPStar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CBB1BC66FDA009D3299 /* BPStar.cpp */; };
+		9CB35CC01BC66FE9009D3299 /* BPNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CBE1BC66FE9009D3299 /* BPNode.cpp */; };
+		9CB35CC31BC66FFA009D3299 /* BPConstellation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CB35CC11BC66FFA009D3299 /* BPConstellation.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		D3301F6A0B43BB293ED97C1D /* ofxCvShortImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A4DD23693DFAB8EC05FAA5D /* ofxCvShortImage.cpp */; };
 		E212C821D1064B92DD953A42 /* ofxCvHaarFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A16CBF2E8CFE43AF54FE6F5 /* ofxCvHaarFinder.cpp */; };
@@ -924,6 +924,7 @@
 		E4B69B600A3A1757003C02F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1010,6 +1011,7 @@
 		E4B69B610A3A1757003C02F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (

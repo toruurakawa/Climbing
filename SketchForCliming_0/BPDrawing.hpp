@@ -41,7 +41,7 @@ public:
     
     void draw() {
         ofPushStyle();
-        ofSetColor(0, 0, 200, alpha);
+        ofSetColor(200, 200, 200, alpha);
         ofSetLineWidth(6);
         ofNoFill();
         ofBeginShape();
