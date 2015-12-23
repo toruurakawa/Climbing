@@ -60,6 +60,7 @@ public:
         for (auto it = stars.begin(); it != stars.end(); it++) {
             it->update();
         }
+        drawing.update();
         drawing.alpha = alpha;
         if (isShooting) {
             alpha += (0 - alpha) / 10.;

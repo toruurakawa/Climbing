@@ -88,7 +88,7 @@ public:
     
     void update() {
         if (isShootingStar) {
-            pos += ofVec2f(-50, 30) * 0.7;
+            pos += ofVec2f(-50, 30) * 0.5;
             if (pos.x <= 0) {
                 pos.x = 0;
             }

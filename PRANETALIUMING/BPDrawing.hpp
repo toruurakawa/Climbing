@@ -39,6 +39,11 @@ public:
         ptss.push_back(_pts);
     }
     
+    void update()
+    {
+    
+    }
+
     void draw() {
         ofPushStyle();
         ofSetColor(0, 0, 200, alpha);
@@ -66,14 +71,18 @@ public:
         }
         sum = sum / ofVec3f(size);
         for (int i = 0; i < ptss.size(); i++) {
-            ofBeginShape();
-            for (auto it = ptss[i].begin(); it != ptss[i].end(); it++) {
-                ofVec3f p = ofVec3f(it->x, it->y, 0);
+            for (int j = 0; j < ptss[i].size() - 1; j++) {
+                ofSetColor(0, 100, 200, alpha * (1 - fabs(j - ofNoise(ofGetElapsedTimef()) * ptss[i].size()) / (float)(ptss[i].size() * .25)));
+                ofBeginShape();
+                ofVec3f p = ofVec3f(ptss[i][j].x, ptss[i][j].y, 0);
                 ofVec3f a =  sum;
                 p = m * (p - a) + a;
                 ofVertex(p.x, p.y);
+                ofVec3f p2 = ofVec3f(ptss[i][j + 1].x, ptss[i][j + 1].y, 0);
+                p2 = m * (p2 - a) + a;
+                ofVertex(p2.x, p2.y);
+                ofEndShape();
             }
-            ofEndShape();
         }
         ofPopStyle();
     }

@@ -193,17 +193,17 @@ public:
                     c = ofColor::red;
                     break;
                 case 1:
-                    c = ofColor::green;
+                    c = ofColor::red;
                     break;
                 case 2:
-                    c = ofColor::blue;
+                    c = ofColor::red;
                     break;
                 default:
                     break;
             }
-            pixels_c[i]     = c.r;
-            pixels_c[i + 1] = c.g;
-            pixels_c[i + 2] = c.b;
+            pixels_c[i]     = ofNoise(i/100.) * 255;
+            pixels_c[i + 1] = ofNoise(i/100. + 200) * 255;
+            pixels_c[i + 2] = ofNoise(i/100. + 400) * 255;
             pixels_c[i + 3] = 255;
 
             x++;
