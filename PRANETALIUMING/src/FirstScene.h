@@ -23,6 +23,7 @@ public:
     void willExit();
     
     int y=0;
+    ofImage logoImg;
 };
 
 #endif /* defined(__example_Simple__FirstScene__) */

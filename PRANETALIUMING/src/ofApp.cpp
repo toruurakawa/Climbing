@@ -7,6 +7,7 @@ bool showEdges = false;
 
 #include "Scenes.h"
 
+ofImage courseImg;
 //--------------------------------------------------------------
 void ofApp::setup(){
     ofSetFrameRate(60);
@@ -26,12 +27,16 @@ void ofApp::setup(){
     
     sceneManager.addScene(ofPtr<ofxScene>(new FirstScene));
     sceneManager.addScene(ofPtr<ofxScene>(new SecondScene));
-    sceneManager.addScene(ofPtr<ofxScene>(new TitleScene));
+//    sceneManager.addScene(ofPtr<ofxScene>(new TitleScene));
     sceneManager.addScene(ofPtr<ofxScene>(new ThirdScene));
     sceneManager.setExitByTime(false);
     sceneManager.setSceneDuration(0.3, 1.5, 0.3);
     
     sceneManager.run();
+    
+    ofAddListener(sceneManager.scenes[2]->notify, this, &ofApp::haveBeenNotified);
+
+    courseImg.loadImage("Courses/100_1.jpg");
 }
 
 //--------------------------------------------------------------
@@ -53,7 +58,8 @@ void ofApp::draw(){
     glMultMatrixf(mat.getPtr());
     fbo.draw(0, 0);
     glPopMatrix();
-
+    
+    
 }
 
 //--------------------------------------------------------------
@@ -175,4 +181,9 @@ void ofApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
+}
+
+//--------------------------------------------------------------
+void ofApp::haveBeenNotified(int &i){
+    sceneManager.changeScene(1);
 }

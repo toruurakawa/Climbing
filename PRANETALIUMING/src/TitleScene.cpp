@@ -14,6 +14,7 @@ void TitleScene::setup(ofPtr<ofxScene> previousScene) {
     SecondScene* scene = dynamic_cast<SecondScene *>(previousScene.get());
     c.clear();
     c.loadFromXml(scene->cs.currentConstellationXML());
+    
 }
 
 void TitleScene::update() {

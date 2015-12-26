@@ -52,5 +52,7 @@ class ofApp : public ofBaseApp{
     ofxQuadWarp warper;
 
     ofxSceneManager sceneManager;
+    
+    void haveBeenNotified(int &i);
 
 };

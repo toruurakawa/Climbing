@@ -19,6 +19,7 @@ class BPStar {
 public:
     bool isConstellation;
     bool isShootingStar;
+    bool isBackgroundStar;
     bool isFinished;
     static ofImage starImg;
     float shootingTime;
@@ -27,6 +28,7 @@ public:
     BPStar() {
         isConstellation = false;
         isShootingStar = false;
+        isBackgroundStar = false;
         isFinished = false;
         id = size++;
     }
@@ -88,7 +90,11 @@ public:
     
     void update() {
         if (isShootingStar) {
-            pos += ofVec2f(-50, 30) * 0.5;
+            if (isBackgroundStar) {
+                pos += ofVec2f(-50, 30) * 2.;
+            } else {
+                pos += ofVec2f(-50, 30) * 0.5;
+            }
             if (pos.x <= 0) {
                 pos.x = 0;
             }

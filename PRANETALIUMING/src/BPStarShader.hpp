@@ -7,6 +7,7 @@
 //
 
 #pragma once
+#include "ofMain.h"
 #include "BPShader.hpp"
 #include "BPStar.hpp"
 
@@ -144,7 +145,7 @@ public:
 //            positionImg.setColor(j, 0, c_s);
 //            j++;
 //        }
-        
+                
         int x = 0;
         unsigned char * pixels_s = positionImg.getPixels();
         unsigned char * pixels_l = positionImgL.getPixels();
@@ -179,8 +180,8 @@ public:
 
             pixels_s[i] = 255 * x_s;
             pixels_s[i + 1] = 255 * y_s;
-            pixels_s[i + 2] = 255 * (it->getMagnitude() + 1) / 5.; // magnitude = -1 ~ 4
-            pixels_s[i + 3] = 255 * it->isShootingStar;
+            pixels_s[i + 2] = 255 * (it->getMagnitude() + 1) / 5. - 110 * it->isBackgroundStar; // magnitude = -1 ~ 4
+            pixels_s[i + 3] = 125 * it->isShootingStar - 110 * it->isBackgroundStar;
             
             pixels_l[i] = 255 * x_l;
             pixels_l[i + 1] = 255 * y_l;
@@ -188,22 +189,31 @@ public:
             pixels_l[i + 3] = 255 * !it->isFinished;
             
             ofColor c;
-            switch (i % 3) {
-                case 0:
-                    c = ofColor::red;
-                    break;
-                case 1:
-                    c = ofColor::red;
-                    break;
-                case 2:
-                    c = ofColor::red;
-                    break;
-                default:
-                    break;
+            if (it->isBackgroundStar) {
+                c = ofColor(ofNoise(ofGetElapsedTimef() + x_s) * 100,
+                            ofNoise(ofGetElapsedTimef() + 200 + y_s) * 100,
+                            ofNoise(ofGetElapsedTimef() + 400 + i) * 100);
+
+            } else {
+                switch (it->getMagnitude()) {
+                    case 0:
+                        c = ofColor(100 + ofNoise(i/10.) * 55,
+                                    100 + ofNoise(i/10. + 200) * 55,
+                                    100 + ofNoise(i/10. + 400) * 55);
+                        break;
+                    case 1:
+                        c = ofColor(50, 100, 255);
+                        break;
+                    case 2:
+                        c = ofColor(255, 100, 50);
+                        break;
+                    default:
+                        break;
+                }
             }
-            pixels_c[i]     = ofNoise(i/100.) * 255;
-            pixels_c[i + 1] = ofNoise(i/100. + 200) * 255;
-            pixels_c[i + 2] = ofNoise(i/100. + 400) * 255;
+            pixels_c[i]     = c.r;//ofNoise(i/100.) * 255;
+            pixels_c[i + 1] = c.g;//ofNoise(i/100. + 200) * 255;
+            pixels_c[i + 2] = c.b;//ofNoise(i/100. + 400) * 255;
             pixels_c[i + 3] = 255;
 
             x++;

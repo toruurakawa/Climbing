@@ -10,19 +10,26 @@
 #include "BPStar.hpp"
 #include "BPNode.hpp"
 #include "BPDrawing.hpp"
+#include "ofxSVG.h"
 
 class BPConstellation {
     string filename;
     string name;
     vector<BPStar> stars;
     vector<BPNode> nodes;
-    float alpha;
+    float alpha, drawingAlpha;
     BPDrawing drawing;
+    ofImage drawingImage;
+    ofVec2f drawingCenter;
+    ofxSVG svg;
 public:
+    bool isPlaying;
     bool isShooting;
-    
+    float dstAlpha, dstDrawingAlpha;
+
     BPConstellation() {
-        alpha = 255;
+        alpha = dstAlpha = 255;
+        drawingAlpha = dstDrawingAlpha = alpha;
     }
     
     vector<BPStar>* getStars(){
@@ -57,14 +64,30 @@ public:
     }
     
     void update() {
-        for (auto it = stars.begin(); it != stars.end(); it++) {
+//        for (auto it = stars.begin(); it != stars.end(); it++) {
+//            it->update();
+//        }
+        auto it = stars.begin();
+        while (it != stars.end()) {
             it->update();
+            if (it->isBackgroundStar && it->isFinished) {
+                it = stars.erase(it);
+            } else {
+                ++it;
+            }
+        }
+        if (isPlaying) {
+            float tmp = sin(ofGetElapsedTimef()) * 100;
+            if (tmp > 10) {
+                dstDrawingAlpha = tmp;
+            } else {
+                dstDrawingAlpha = 0;
+            }
         }
         drawing.update();
-        drawing.alpha = alpha;
-        if (isShooting) {
-            alpha += (0 - alpha) / 10.;
-        }
+        drawing.alpha = drawingAlpha;
+        alpha += (dstAlpha - alpha) / 10.;
+        drawingAlpha += (dstDrawingAlpha - drawingAlpha) / 10.;
     }
     
     void draw() {
@@ -75,7 +98,10 @@ public:
             it->draw();
         }        
         // Drawing
-        drawing.draw();
+        ofSetRectMode(OF_RECTMODE_CENTER);
+        ofSetColor(255, drawingAlpha);
+        drawingImage.draw(drawingCenter.x, drawingCenter.y, drawingImage.getWidth(), drawingImage.getHeight());
+//        svg.draw();
         ofPopStyle();
     }
     
@@ -219,6 +245,8 @@ public:
                 loadXml.setTo("../");
             }while( loadXml.setToSibling() ); // go to next STROKE
         }
+        drawingImage.loadImage("Drawings/hutagoza.png");
+        drawingCenter = ofVec2f(getCenter().x, getCenter().y);
     }
     
     string getFilename() {
@@ -227,5 +255,14 @@ public:
     
     string getName() {
         return name;
+    }
+    
+    ofVec3f getCenter() {
+        ofMesh mesh;
+        for (int i = 0; i < stars.size(); i++) {
+            ofVec3f v = stars[i].getPosition();
+            mesh.addVertex(v);
+        }
+        return mesh.getCentroid();
     }
 };

@@ -41,6 +41,12 @@
 		9CCC592A1C05A2A700B0F555 /* ofxEasingQuint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CCC59141C05A2A700B0F555 /* ofxEasingQuint.cpp */; };
 		9CCC592B1C05A2A700B0F555 /* ofxEasingSine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CCC59161C05A2A700B0F555 /* ofxEasingSine.cpp */; };
 		9CCC592C1C05A2A700B0F555 /* ofxTween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CCC59181C05A2A700B0F555 /* ofxTween.cpp */; };
+		9CEC80581C2D019400340F51 /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC80531C2D019400340F51 /* ReadMe.md */; };
+		9CEC80C81C2E801F00340F51 /* src_colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC80A51C2E801F00340F51 /* src_colors.cpp */; };
+		9CEC80C91C2E801F00340F51 /* svgtiny.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC80A61C2E801F00340F51 /* svgtiny.cpp */; };
+		9CEC80CA1C2E801F00340F51 /* svgtiny_gradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC80A81C2E801F00340F51 /* svgtiny_gradient.cpp */; };
+		9CEC80CB1C2E801F00340F51 /* svgtiny_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC80AA1C2E801F00340F51 /* svgtiny_list.cpp */; };
+		9CEC80CC1C2E801F00340F51 /* ofxSVG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC80AD1C2E801F00340F51 /* ofxSVG.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		D3301F6A0B43BB293ED97C1D /* ofxCvShortImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A4DD23693DFAB8EC05FAA5D /* ofxCvShortImage.cpp */; };
 		E212C821D1064B92DD953A42 /* ofxCvHaarFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A16CBF2E8CFE43AF54FE6F5 /* ofxCvHaarFinder.cpp */; };
@@ -213,6 +219,17 @@
 		9CCC59171C05A2A700B0F555 /* ofxEasingSine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxEasingSine.h; sourceTree = "<group>"; };
 		9CCC59181C05A2A700B0F555 /* ofxTween.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTween.cpp; sourceTree = "<group>"; };
 		9CCC59191C05A2A700B0F555 /* ofxTween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTween.h; sourceTree = "<group>"; };
+		9CEC80531C2D019400340F51 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		9CEC80551C2D019400340F51 /* ofxCenteredTrueTypeFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxCenteredTrueTypeFont.h; sourceTree = "<group>"; };
+		9CEC80A51C2E801F00340F51 /* src_colors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = src_colors.cpp; sourceTree = "<group>"; };
+		9CEC80A61C2E801F00340F51 /* svgtiny.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svgtiny.cpp; sourceTree = "<group>"; };
+		9CEC80A71C2E801F00340F51 /* svgtiny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svgtiny.h; sourceTree = "<group>"; };
+		9CEC80A81C2E801F00340F51 /* svgtiny_gradient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svgtiny_gradient.cpp; sourceTree = "<group>"; };
+		9CEC80A91C2E801F00340F51 /* svgtiny_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svgtiny_internal.h; sourceTree = "<group>"; };
+		9CEC80AA1C2E801F00340F51 /* svgtiny_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svgtiny_list.cpp; sourceTree = "<group>"; };
+		9CEC80AD1C2E801F00340F51 /* ofxSVG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSVG.cpp; sourceTree = "<group>"; };
+		9CEC80AE1C2E801F00340F51 /* ofxSVG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSVG.h; sourceTree = "<group>"; };
+		9CEC80AF1C2E801F00340F51 /* ofxSVGTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSVGTypes.h; sourceTree = "<group>"; };
 		9DA0CBD43DA38386EB04C9AE /* miniflann.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = miniflann.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/miniflann.hpp; sourceTree = SOURCE_ROOT; };
 		9FF9126184DFBDE8A912373E /* highgui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = highgui.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv/highgui.h; sourceTree = SOURCE_ROOT; };
 		A0399084868E7CAFB7E3D8E9 /* retina.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = retina.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/retina.hpp; sourceTree = SOURCE_ROOT; };
@@ -677,6 +694,73 @@
 			path = Easings;
 			sourceTree = "<group>";
 		};
+		9CEC804E1C2D019400340F51 /* ofxCenteredTrueTypeFont */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC80531C2D019400340F51 /* ReadMe.md */,
+				9CEC80541C2D019400340F51 /* src */,
+			);
+			name = ofxCenteredTrueTypeFont;
+			path = ../../../addons/ofxCenteredTrueTypeFont;
+			sourceTree = "<group>";
+		};
+		9CEC80541C2D019400340F51 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC80551C2D019400340F51 /* ofxCenteredTrueTypeFont.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9CEC805B1C2E801F00340F51 /* ofxSVG */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC80A21C2E801F00340F51 /* libs */,
+				9CEC80AC1C2E801F00340F51 /* src */,
+			);
+			name = ofxSVG;
+			path = ../../../addons/ofxSVG;
+			sourceTree = "<group>";
+		};
+		9CEC80A21C2E801F00340F51 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC80A31C2E801F00340F51 /* svgTiny */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		9CEC80A31C2E801F00340F51 /* svgTiny */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC80A41C2E801F00340F51 /* src */,
+			);
+			path = svgTiny;
+			sourceTree = "<group>";
+		};
+		9CEC80A41C2E801F00340F51 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC80A51C2E801F00340F51 /* src_colors.cpp */,
+				9CEC80A61C2E801F00340F51 /* svgtiny.cpp */,
+				9CEC80A71C2E801F00340F51 /* svgtiny.h */,
+				9CEC80A81C2E801F00340F51 /* svgtiny_gradient.cpp */,
+				9CEC80A91C2E801F00340F51 /* svgtiny_internal.h */,
+				9CEC80AA1C2E801F00340F51 /* svgtiny_list.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9CEC80AC1C2E801F00340F51 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9CEC80AD1C2E801F00340F51 /* ofxSVG.cpp */,
+				9CEC80AE1C2E801F00340F51 /* ofxSVG.h */,
+				9CEC80AF1C2E801F00340F51 /* ofxSVGTypes.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		A0B90D3B0ADB9C1716816714 /* ofxOpenCv */ = {
 			isa = PBXGroup;
 			children = (
@@ -713,6 +797,8 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				9CEC805B1C2E801F00340F51 /* ofxSVG */,
+				9CEC804E1C2D019400340F51 /* ofxCenteredTrueTypeFont */,
 				9CA4A88C1C293CAC005C3959 /* ofxTrueTypeFontUC */,
 				9CCC58DB1C05A2A700B0F555 /* ofxTween */,
 				9CCC58571C05A1D400B0F555 /* ofxSceneManager */,
@@ -950,6 +1036,7 @@
 			files = (
 				9CA6A32A1C080FC8000D53B0 /* PLConstellations.cpp in Sources */,
 				9CB35CB01BC66F0C009D3299 /* ofxQuadWarp.cpp in Sources */,
+				9CEC80C81C2E801F00340F51 /* src_colors.cpp in Sources */,
 				9CCC59281C05A2A700B0F555 /* ofxEasingQuad.cpp in Sources */,
 				9CCC59291C05A2A700B0F555 /* ofxEasingQuart.cpp in Sources */,
 				9CCC58D71C05A22500B0F555 /* FirstScene.cpp in Sources */,
@@ -974,9 +1061,13 @@
 				9CCC59221C05A2A700B0F555 /* ofxEasingBounce.cpp in Sources */,
 				9CB35CBD1BC66FDA009D3299 /* BPStar.cpp in Sources */,
 				9CCC59271C05A2A700B0F555 /* ofxEasingLinear.cpp in Sources */,
+				9CEC80581C2D019400340F51 /* ReadMe.md in Sources */,
 				9CCC59251C05A2A700B0F555 /* ofxEasingElastic.cpp in Sources */,
+				9CEC80CA1C2E801F00340F51 /* svgtiny_gradient.cpp in Sources */,
 				9CCC592A1C05A2A700B0F555 /* ofxEasingQuint.cpp in Sources */,
 				9CCC59231C05A2A700B0F555 /* ofxEasingCirc.cpp in Sources */,
+				9CEC80C91C2E801F00340F51 /* svgtiny.cpp in Sources */,
+				9CEC80CC1C2E801F00340F51 /* ofxSVG.cpp in Sources */,
 				9CCC59211C05A2A700B0F555 /* ofxEasingBack.cpp in Sources */,
 				9CB35CC01BC66FE9009D3299 /* BPNode.cpp in Sources */,
 				9C0BD7681BD48E880060C6EF /* BPStarShader.cpp in Sources */,
@@ -984,6 +1075,7 @@
 				FB09C6B2A1DA0EA217240CB8 /* ofxCvGrayscaleImage.cpp in Sources */,
 				9C233E451C0C21BA0036D765 /* TitleScene.cpp in Sources */,
 				E212C821D1064B92DD953A42 /* ofxCvHaarFinder.cpp in Sources */,
+				9CEC80CB1C2E801F00340F51 /* svgtiny_list.cpp in Sources */,
 				9C0A7C411BCE32E0006C65EB /* BPSky.cpp in Sources */,
 				63020F16C7E8DED980111241 /* ofxCvImage.cpp in Sources */,
 				D3301F6A0B43BB293ED97C1D /* ofxCvShortImage.cpp in Sources */,

@@ -17,19 +17,19 @@ void ofApp::setup(){
     BPStar::starImg.loadImage("particle32.png");
 //    ofSetWindowPosition(2000, 0);
     ofSetFullscreen(true);
-//    sky.setupFromXml("mySettings.xml");
-    sky.setup();
+    sky.setupFromXml("mySettings.xml");
+//    sky.setup();
     
-//    BPConstellation c;
-//    c.loadFromXml("Constellation.xml");
-//    constellations.push_back(c);
-//    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
-//        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
-//            if (it->getId() == it2->getId()) {
-//                it2->isConstellation = true;
-//            }
-//        }
-//    }
+    BPConstellation c;
+    c.loadFromXml("Constellation.xml");
+    constellations.push_back(c);
+    for (auto it = c.getStars()->begin(); it != c.getStars()->end(); it++) {
+        for (auto it2 = sky.getStars()->begin(); it2 != sky.getStars()->end(); it2++) {
+            if (it->getId() == it2->getId()) {
+                it2->isConstellation = true;
+            }
+        }
+    }
     
     mode = Edge;
     fbo.allocate(ofGetWidth(), ofGetHeight());
@@ -172,14 +172,14 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    switch (key) {
-        case 'q':
-            showEdges = true;
-            break;
-            
-        default:
-            break;
-    }
+//    switch (key) {
+//        case 'q':
+//            showEdges = true;
+//            break;
+//            
+//        default:
+//            break;
+//    }
 }
 
 //--------------------------------------------------------------
@@ -241,7 +241,7 @@ void ofApp::keyReleased(int key){
             sky.setupFromXml("mySettings.xml");
             break;
         case 'q':
-            showEdges = false;
+            showEdges = !showEdges;
             break;
         default:
             break;

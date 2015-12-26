@@ -9,6 +9,7 @@
 #ifndef Constants_h
 #define Constants_h
 
-#define FONT_CONSTNAME 45
+#define FONT_CONSTNAME 30
+#define FONT_CONST_RESULT 100
 
 #endif /* Constants_h */
